@@ -55,13 +55,31 @@ jobs:
       run: |
         npx playwright install --with-deps
         npx playwright test
-        
-    - name: Generate Allure Report
-      run: |
-        allure generate allure-results --clean -o allure-report
 
-    - name: Upload Allure Report to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+  allure-report:
+    needs: test
+    runs-on: ubuntu-22.04
+    if: success()
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
       with:
-        deploy_token: ${{ secrets.GITHUB_TOKEN }}
-        folder: allure-report
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        npm install
+
+    - name: Generate Allure report
+      run: |
+        npm run allure:generate
+
+    - name: Upload Allure report as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: allure-report
+        path: allure-report
