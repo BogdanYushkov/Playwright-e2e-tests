@@ -1,38 +1,28 @@
-name: Playwright CI/CD
+name: Playwright Tests
 
 on:
   push:
-    branches:
-      - main
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'  
-
-      - name: Check Node.js version
-        run: node -v
-      - name: Clear npm cache
-        run: npm cache clean --force
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install --unsafe-perm=true  
+        run: npm install
 
-      - name: Install Playwright binaries
-        run: npm exec playwright install --with-deps  
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
 
-      - name: Fix Playwright binary permissions
-        run: chmod -R +x ./node_modules/playwright 
       - name: Run Playwright tests
-        run: npm exec playwright test  
+        run: npx playwright test
 
-      - name: Run Lighthouse
-        run: npx lighthouse https://your-website.com --output html --output-path ./lighthouse-report.html
