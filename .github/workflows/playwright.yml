@@ -25,7 +25,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y 
-
+        
     - name: Install dependencies
       run: |
         npm install
@@ -46,6 +46,10 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
+
+    - name: Grant execute permissions to Playwright
+      run: |
+        chmod +x ./node_modules/.bin/playwright
 
     - name: Run Playwright tests
       run: |
