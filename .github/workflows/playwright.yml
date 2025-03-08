@@ -19,25 +19,20 @@ jobs:
           node-version: '18'  
 
       - name: Check Node.js version
-        run: node -v  
-
+        run: node -v
       - name: Clear npm cache
         run: npm cache clean --force
 
-      - name: Install dependencies with sudo
-        run: |
-          sudo npm install --unsafe-perm=true  
+      - name: Install dependencies
+        run: npm install --unsafe-perm=true  
 
       - name: Install Playwright binaries
-        run: |
-          sudo npx playwright install --with-deps  
+        run: npm exec playwright install --with-deps  
 
       - name: Fix Playwright binary permissions
-        run: sudo chmod -R +x node_modules/playwright  
-
+        run: chmod -R +x ./node_modules/playwright 
       - name: Run Playwright tests
-        run: |
-          sudo npx playwright test  
+        run: npm exec playwright test  
 
       - name: Run Lighthouse
         run: npx lighthouse https://your-website.com --output html --output-path ./lighthouse-report.html
