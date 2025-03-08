@@ -20,13 +20,20 @@ jobs:
 
       - name: Check Node.js version
         run: node -v  
+
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Install dependencies
         run: |
           npm install --unsafe-perm=true
           npx playwright install --with-deps
 
-      - name: Check Playwright binary permissions
-        run: ls -l $(npm bin)/playwright  
+      - name: Install Playwright with sudo (if necessary)
+        run: sudo npm install --unsafe-perm=true  
+
+      - name: Fix Playwright binary permissions
+        run: chmod +x $(npm bin)/playwright  
 
       - name: Run Playwright tests
         run: npx playwright test
