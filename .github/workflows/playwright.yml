@@ -21,10 +21,12 @@ jobs:
         run: npm install
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: |
+          npx playwright install --with-deps
+          chmod +x node_modules/.bin/playwright
 
       - name: Run Playwright tests
-        run: npm test
+        run: npx playwright test
 
       - name: Run Lighthouse
         run: npx lighthouse https://your-website.com --output html --output-path ./lighthouse-report.html
