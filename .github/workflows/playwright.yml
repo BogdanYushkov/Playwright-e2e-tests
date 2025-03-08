@@ -34,4 +34,4 @@ jobs:
           chmod -R +x node_modules/playwright # Обеспечиваем права на выполнение бинарников
 
       - name: Run Playwright tests
-        run: npm exec playwright test  # Запуск тестов с использованием npm exec
+        run: npm playwright test  # Запуск тестов с использованием npm exec
