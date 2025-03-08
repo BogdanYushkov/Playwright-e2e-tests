@@ -1,71 +1,36 @@
-name: Playwright Tests
+name: Playwright Tests  # Название workflow
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  push:  # Запускается при push в любую ветку
+  pull_request:  # Запускается при открытии PR
 
 jobs:
-  setup:
-    runs-on: ubuntu-22.04
+  test:
+    runs-on: ubuntu-latest  # Используем последнюю версию Ubuntu
+
     steps:
-      - name: Checkout repository
+      - name: Checkout repository  # Клонируем репозиторий
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Set up Node.js  # Устанавливаем Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'  # Кэширование зависимостей npm
+          node-version: 18  # Используем 18 версию
 
-      - name: Install dependencies
-        run: npm ci  # Используем "ci" для более быстрого и надежного инсталла
+      - name: Install dependencies  # Устанавливаем зависимости
+        run: |
+          npm ci  # Чистая установка зависимостей
 
-      - name: Install Playwright dependencies
+      - name: Install Playwright browsers  # Устанавливаем браузеры Playwright
         run: npx playwright install --with-deps
 
-  test:
-    needs: setup
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Use cached dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
-
-      - name: Run Playwright tests
+      - name: Run Playwright tests  # Запускаем тесты
         run: npx playwright test
 
-  allure-report:
-    needs: test
-    runs-on: ubuntu-22.04
-    if: always()
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Use cached dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
-
-      - name: Generate Allure report
-        run: npm run allure:generate
-
-      - name: Upload Allure report as artifact
+      - name: Upload Playwright report  # Загружаем отчет тестов
+        if: always()  # Запускаем даже если тесты упали
         uses: actions/upload-artifact@v3
         with:
-          name: allure-report
-          path: allure-report
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7  # Храним отчет 7 дней
