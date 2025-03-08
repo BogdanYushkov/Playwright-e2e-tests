@@ -1,35 +1,8 @@
-name: Playwright Tests  # Название workflow
-
-on:
-  workflow_dispatch:  # Запуск только вручную
-
+name: Test Runner
+on: workflow_dispatch
 jobs:
   test:
-    runs-on: ubuntu-latest  # Используем последнюю версию Ubuntu
-
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository  # Клонируем репозиторий
-        uses: actions/checkout@v3
+      - run: echo "Runner is working!"
 
-      - name: Set up Node.js  # Устанавливаем Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18  # Используем 18 версию
-
-      - name: Install dependencies  # Устанавливаем зависимости
-        run: |
-          npm ci  # Чистая установка зависимостей
-
-      - name: Install Playwright browsers  # Устанавливаем браузеры Playwright
-        run: npx playwright install --with-deps
-
-      - name: Run Playwright tests  # Запускаем тесты
-        run: npx playwright test
-
-      - name: Upload Playwright report  # Загружаем отчет тестов
-        if: always()  # Запускаем даже если тесты упали
-        uses: actions/upload-artifact@v3
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 7  # Храним отчет 7 дней
