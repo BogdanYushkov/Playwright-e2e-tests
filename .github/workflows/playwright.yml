@@ -24,19 +24,17 @@ jobs:
       - name: Clear npm cache
         run: npm cache clean --force
 
-      - name: Install dependencies
+      - name: Install dependencies with sudo
         run: |
-          npm install --unsafe-perm=true
+          sudo npm install --unsafe-perm=true  # Установка зависимостей с правами администратора
           npx playwright install --with-deps
 
-      - name: Install Playwright with sudo (if necessary)
-        run: sudo npm install --unsafe-perm=true  
-
       - name: Fix Playwright binary permissions
-        run: chmod +x $(npm bin)/playwright  
+        run: sudo chmod +x $(npm bin)/playwright 
 
       - name: Run Playwright tests
         run: npx playwright test
+
 
       - name: Run Lighthouse
         run: npx lighthouse https://your-website.com --output html --output-path ./lighthouse-report.html
