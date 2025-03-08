@@ -19,8 +19,7 @@ jobs:
     - name: Set up Node.js (version 18)
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Устанавливаем Node.js 18 или выше
-
+        node-version: '18'  
     - name: Cache npm dependencies
       uses: actions/cache@v3
       with:
@@ -32,7 +31,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo npm install
-        sudo npx playwright install  # Устанавливаем необходимые зависимости Playwright
+        sudo npx playwright install  
 
     - name: Fix permissions for Playwright binaries
       run: |
@@ -41,4 +40,4 @@ jobs:
 
     - name: Run Playwright tests
       run: |
-        sudo npx playwright test  # Запуск тестов с правами выполнения
+        sudo npx playwright test  
