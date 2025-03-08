@@ -1,8 +1,7 @@
 name: Playwright Tests  # Название workflow
 
 on:
-  push:  # Запускается при push в любую ветку
-  pull_request:  # Запускается при открытии PR
+  workflow_dispatch:  # Запуск только вручную
 
 jobs:
   test:
