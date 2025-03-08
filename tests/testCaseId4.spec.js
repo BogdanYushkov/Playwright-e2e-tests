@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test");
 
-test.beforeAll(async ({ browser }) => { // User is on the logined into account
+test.beforeAll(async ({ browser }) => { // User is logged into account
     const context = await browser.newContext();
     const page = await context.newPage();
 
