@@ -59,7 +59,7 @@ jobs:
   allure-report:
     needs: test
     runs-on: ubuntu-22.04
-    if: always()  
+    if: always()
 
     steps:
     - name: Checkout repository
@@ -79,7 +79,8 @@ jobs:
         npm run allure:generate
 
     - name: Upload Allure report as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2  
       with:
         name: allure-report
         path: allure-report
+
