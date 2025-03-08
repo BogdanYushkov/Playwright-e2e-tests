@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright Test
 
 on:
   push:
@@ -16,28 +16,15 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Node.js (version 18)
+    - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  
-    - name: Cache npm dependencies
-      uses: actions/cache@v3
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+        node-version: '16'
 
     - name: Install dependencies
       run: |
-        sudo npm install
-        sudo npx playwright install  
-
-    - name: Fix permissions for Playwright binaries
-      run: |
-        sudo chmod -R +x ./node_modules/.bin
-        sudo chmod -R +x node_modules/playwright
+        npm install
+        npx playwright install
 
     - name: Run Playwright tests
-      run: |
-        sudo npx playwright test  
+      run: npx playwright test
