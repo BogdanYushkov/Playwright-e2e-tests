@@ -22,11 +22,15 @@ jobs:
 
       - name: Install Playwright Browsers
         run: |
+          npm install playwright
           npx playwright install --with-deps
           chmod +x node_modules/.bin/playwright
 
       - name: Run Playwright tests
         run: npx playwright test
+
+      - name: Install Playwright dependencies
+        run: sudo apt-get install -y wget libnss3 libatk-bridge2.0-0 libatk1.0-0 libcups2 libx11-xcb1 libxcomposite1 libxrandr2 libgbm1 libasound2 libnspr4 libnss3 libgdk-pixbuf2.0-0 libxss1
 
       - name: Run Lighthouse
         run: npx lighthouse https://your-website.com --output html --output-path ./lighthouse-report.html
