@@ -59,7 +59,7 @@ jobs:
   allure-report:
     needs: test
     runs-on: ubuntu-22.04
-    if: success()
+    if: always()  
 
     steps:
     - name: Checkout repository
