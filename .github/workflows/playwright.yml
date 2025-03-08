@@ -16,10 +16,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Node.js
+    - name: Set up Node.js (version 18)
       uses: actions/setup-node@v3
       with:
-        node-version: '16'  # Укажите вашу версию Node.js
+        node-version: '18'  # Установите Node.js 18 или выше
 
     - name: Cache npm dependencies
       uses: actions/cache@v3
@@ -33,6 +33,9 @@ jobs:
       run: |
         npm install
         npx playwright install  # Устанавливаем необходимые зависимости Playwright
+
+    - name: Give Playwright permission to execute
+      run: chmod +x ./node_modules/.bin/playwright  # Устанавливаем права на выполнение
 
     - name: Run Playwright tests
       run: npx playwright test
