@@ -14,7 +14,7 @@ jobs:
       - name: Set up Node.js  # Устанавливаем Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Используем 18 версию
+          node-version: 18  
 
       - name: Install dependencies  # Устанавливаем зависимости
         run: |
