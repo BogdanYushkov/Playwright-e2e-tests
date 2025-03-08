@@ -2,9 +2,6 @@
   "name": "luxequality",
   "version": "1.0.0",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.9"
@@ -12,12 +9,9 @@
   "scripts": {
     "test": "playwright test"
   },
-  "directories": {
-    "test": "tests"
-  },
   "dependencies": {
     "undici-types": "^6.20.0"
-  },
-  "description": ""
+  }
 }
+
 
