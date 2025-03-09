@@ -1,55 +1,44 @@
-// playwright.config.js
-module.exports = {
-  // Папка, в которой находятся ваши тесты
+const { defineConfig, devices } = require('@playwright/test');
+
+module.exports = defineConfig({
   testDir: './tests',
-
-  // Ожидаемое поведение тестов
-  timeout: 30000, // Время ожидания для каждого теста (30 секунд)
-
-  // Глобальная настройка для каждого теста
+  timeout: 30000,
   use: {
-    headless: true, // Запускать браузер в фоновом режиме (без графического интерфейса)
-    viewport: { width: 1280, height: 720 }, // Устанавливаем размер экрана
-    video: 'on-first-retry', // Сохранять видео только при первом неудачном запуске
-    actionTimeout: 10000, // Время ожидания для каждого действия (например, клики или заполнение форм)
-    ignoreHTTPSErrors: true, // Игнорировать ошибки SSL/TLS
-    screenshot: 'only-on-failure', // Делаем скриншоты только при ошибке теста
-    baseURL: 'https://www.saucedemo.com', // Базовый URL для вашего приложения
+    headless: true,
+    viewport: { width: 1280, height: 720 },
+    video: 'on-first-retry',
+    actionTimeout: 10000,
+    ignoreHTTPSErrors: true,
+    screenshot: 'only-on-failure',
+    baseURL: 'https://www.saucedemo.com',
   },
-
-  // Настройки тестов
   projects: [
     {
-      name: 'Chromium', // Используем браузер Chromium
+      name: 'Chromium',
       use: { 
         browserName: 'chromium', 
       },
     },
     {
-      name: 'Firefox', // Используем браузер Firefox
+      name: 'Firefox',
       use: { 
         browserName: 'firefox', 
       },
     },
     {
-      name: 'WebKit', // Используем браузер WebKit (Safari)
+      name: 'WebKit',
       use: { 
         browserName: 'webkit', 
       },
     },
   ],
-
-  // Местоположение для отчетов о тестах
-  reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
-
-  // Логирование ошибок
+  reporter: [
+    ['allure-playwright'],
+    ['dot'],
+  ],
   expect: {
-    timeout: 5000, // Тайм-аут для ожидания в `expect` (например, ожидание элемента)
+    timeout: 5000,
   },
-
-  // Прочие настройки
-  retries: 2, // Число попыток перезапуска теста при его сбое
-  workers: 2, // Количество одновременных процессов
-};
-
-
+  retries: 2,
+  workers: 2,
+});
