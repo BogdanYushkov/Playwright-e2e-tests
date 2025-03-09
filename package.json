@@ -5,7 +5,8 @@
   "devDependencies": {
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.9",
-    "allure-playwright": "^2.0.0"
+    "allure-commandline": "^2.33.0",
+    "allure-playwright": "^2.15.1"
   },
   "scripts": {
     "test": "playwright test",
@@ -16,5 +17,3 @@
     "undici-types": "^6.20.0"
   }
 }
-
-
