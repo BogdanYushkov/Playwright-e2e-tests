@@ -1,7 +1,7 @@
 name: Playwright Tests
 
 on:
-  workflow_dispatch:  # Запуск только вручную
+  workflow_dispatch: 
 
 jobs:
   test:
@@ -24,16 +24,24 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npx playwright test --reporter=allure-playwright
 
       - name: Generate Allure report
         run: |
           npx allure generate allure-results --clean -o allure-report
 
-      - name: Upload Allure report
+      - name: Upload Allure report as an artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-report
           path: allure-report/
           retention-days: 7
+
+      - name: Deploy Allure report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          branch: gh-pages
+          folder: allure-report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
