@@ -32,4 +32,4 @@ jobs:
         with:
           name: playwright-report
           path: playwright-report/
-          retention-days: 7  # Храним отчет 7 дней
+          retention-days: 7  
