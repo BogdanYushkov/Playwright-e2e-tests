@@ -27,7 +27,7 @@ jobs:
         run: npx playwright test
 
       - name: Upload Playwright report  # Загружаем отчет тестов
-        if: always()  # Запускаем даже если тесты упали
+        if: always()  
         uses: actions/upload-artifact@v3
         with:
           name: playwright-report
