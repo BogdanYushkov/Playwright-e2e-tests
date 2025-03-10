@@ -30,6 +30,14 @@ jobs:
         run: |
           npx allure generate allure-results --clean -o allure-report  # Генерация отчёта в одну и ту же папку
 
+      - name: Commit updated report to gh-pages
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add allure-report/*
+          git commit -m "Update Allure report"
+          git push origin gh-pages  # Коммитим новые данные в ветку gh-pages
+
       - name: Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
