@@ -23,6 +23,15 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Install Java
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-11-jdk  # Установка Java 11
+
+      - name: Install Allure Commandline
+        run: |
+          npm install -g allure-commandline --save-dev  # Установка Allure CLI
+
       - name: Run Playwright tests
         run: npx playwright test --reporter=allure-playwright
 
