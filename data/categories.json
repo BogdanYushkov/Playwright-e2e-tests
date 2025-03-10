@@ -6,7 +6,7 @@
       "name" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
       "children" : [ {
         "name" : "Test Checkout without products",
-        "uid" : "405665fbc6031b1f",
+        "uid" : "4b94b93c461a7bfd",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
@@ -19,7 +19,7 @@
         "parameters" : [ "Chromium" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "f26b01079e0382c7",
+        "uid" : "6d39cf09a189524b",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
@@ -32,7 +32,7 @@
         "parameters" : [ "Firefox" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "e630e8928ba8f992",
+        "uid" : "e5709f1d448f98be",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
@@ -45,39 +45,39 @@
         "parameters" : [ "WebKit" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "ede003add9756434",
+        "uid" : "6db71ba3c6fa3bbc",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1741627214936,
-          "stop" : 1741627216987,
-          "duration" : 2051
+          "start" : 1741627722798,
+          "stop" : 1741627724028,
+          "duration" : 1230
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "Chromium" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "691974f1723a8bca",
+        "uid" : "6e16d5bbc1830d13",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1741627234344,
-          "stop" : 1741627238933,
-          "duration" : 4589
+          "start" : 1741627741323,
+          "stop" : 1741627745851,
+          "duration" : 4528
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "Firefox" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "d509b16966711a1f",
+        "uid" : "b8ccfd2a8db843b1",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1741627252600,
-          "stop" : 1741627254752,
-          "duration" : 2152
+          "start" : 1741627761049,
+          "stop" : 1741627763209,
+          "duration" : 2160
         },
         "flaky" : false,
         "newFailed" : false,
