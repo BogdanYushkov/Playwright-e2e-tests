@@ -63,30 +63,32 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '11'
-      if: always()
+      if: always()  # Этот шаг выполнится всегда, даже если тесты не прошли.
 
     - name: Check Allure results directory
       run: ls -l allure-results
-      if: always()
+      if: always()  # Этот шаг выполнится всегда.
 
     - name: Generate Allure Report
       uses: simple-elf/allure-report-action@v1
       with:
         allure_results: allure-results
         allure_report: allure-report
-      if: always()
+      if: always()  # Этот шаг также выполнится всегда.
 
     - name: Set up Git
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-      
+      if: always()  # Выполнится всегда.
+
     - name: Clean up previous deployment
       run: |
         git fetch --prune
         git checkout gh-pages
         git reset --hard origin/gh-pages
         git clean -fdx
+      if: always()  # Выполнится всегда.
 
     - name: Deploy Allure Report to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
@@ -96,4 +98,4 @@ jobs:
         clean: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      if: always()
+      if: always()  # Этот шаг выполнится всегда.
