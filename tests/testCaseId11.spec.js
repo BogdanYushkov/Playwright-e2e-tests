@@ -38,5 +38,5 @@ test("Test Checkout without products", async ({ browser }) => {
     const textContent = await checkoutInfoLocator.textContent();
 
     expect(textContent).toContain('Cart is empty'); // error message "Cart is empty" are displayed
-    // This text will be failed    
+    // This text will be failed 
 })
