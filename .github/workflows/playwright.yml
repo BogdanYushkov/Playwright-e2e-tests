@@ -84,6 +84,7 @@ jobs:
 
     - name: Clean up previous deployment
       run: |
+        sudo rm -rf allure-report/*
         git fetch origin
         git checkout -B gh-pages origin/gh-pages
         git reset --hard origin/gh-pages
