@@ -28,20 +28,29 @@ jobs:
 
       - name: Generate Allure report
         run: |
-          npx allure generate allure-results --clean -o allure-report-${{ github.run_id }}  # Уникальная папка с отчетом
+          npx allure generate allure-results --clean -o allure-report-${{ github.run_id }}
 
       - name: Upload Allure report as an artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report-${{ github.run_id }}  # Уникальное имя артефакта
-          path: ./allure-report-${{ github.run_id }}  # Уникальная директория для артефакта
+          name: allure-report-${{ github.run_id }}
+          path: ./allure-report-${{ github.run_id }}
           retention-days: 7
+
+      - name: Update latest report link
+        run: |
+          echo "allure-report-${{ github.run_id }}" > latest-report.txt
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add latest-report.txt
+          git commit -m "Update latest report link"
+          git push origin gh-pages
 
       - name: Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           branch: gh-pages
-          folder: allure-report-${{ github.run_id }}  # Уникальная папка для деплоя
+          folder: allure-report-${{ github.run_id }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
