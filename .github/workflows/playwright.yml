@@ -69,13 +69,6 @@ jobs:
       run: ls -l allure-results
       if: always()  # Этот шаг выполнится всегда.
 
-    - name: Generate Allure Report
-      uses: simple-elf/allure-report-action@v1
-      with:
-        allure_results: allure-results
-        allure_report: allure-report
-      if: always()  # Этот шаг также выполнится всегда.
-
     - name: Set up Git
       run: |
         git config --global user.name "github-actions"
@@ -90,20 +83,18 @@ jobs:
         fi
       if: always()  # Этот шаг выполнится всегда.
 
-    - name: Check if allure-report has content
+    - name: Clear previous report contents
       run: |
-        if [ "$(ls -A allure-report)" ]; then
-          echo "allure-report is not empty, proceeding with deployment."
-        else
-          echo "allure-report is empty, skipping deployment."
-        fi
+        rm -rf allure-report/*
+        echo "Old Allure report files removed"
       if: always()  # Этот шаг выполнится всегда.
 
-    - name: Create gh-pages branch if it doesn't exist
-      run: |
-        git fetch origin
-        git branch -r | grep -q "origin/gh-pages" || git checkout --orphan gh-pages
-      if: always()  # Этот шаг выполнится всегда.
+    - name: Generate Allure Report
+      uses: simple-elf/allure-report-action@v1
+      with:
+        allure_results: allure-results
+        allure_report: allure-report
+      if: always()  # Этот шаг также выполнится всегда.
 
     - name: Add Allure report files to git
       run: |
@@ -117,7 +108,7 @@ jobs:
       with:
         branch: gh-pages
         folder: allure-report
-        clean: false
+        clean: true  # Важно: мы используем clean: true для очистки старых данных на GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: always()  # Этот шаг выполнится всегда.
