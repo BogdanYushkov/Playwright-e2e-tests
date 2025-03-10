@@ -80,11 +80,10 @@ jobs:
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-      if: always()  # Выполнится всегда.
+      if: always()  
 
     - name: Ensure proper permissions and clean deployment
       run: |
-        # Устанавливаем правильные права доступа для всех файлов в allure-report и allure-history
         sudo chmod -R 777 allure-report
         sudo chown -R $USER:$USER allure-report
         git fetch origin
@@ -93,8 +92,8 @@ jobs:
         sudo rm -rf allure-report/*
         git clean -fdx
         if [ -d "allure-report" ]; then git rm -rf allure-report/*; fi
-        if [ -d "allure-history" ]; then git rm -rf allure-history/*; fi
-      if: always()  
+      if: always() 
+
 
 
 
