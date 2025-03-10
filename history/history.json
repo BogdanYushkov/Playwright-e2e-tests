@@ -1,4 +1,25 @@
 {
+  "b73fdc191ea9504d6a08b8f9e863f369:16da5751320efd68221c8b8753b00279" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "326a8abd20207216",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/326a8abd20207216",
+      "status" : "failed",
+      "statusDetails" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
+      "time" : {
+        "start" : 1741628931899,
+        "stop" : 1741628933688,
+        "duration" : 1789
+      }
+    } ]
+  },
   "4a7f0ac9a4b7fe67d44722824e2f9750:483ec23660f592decbe63698f54f1a47" : {
     "statistic" : {
       "failed" : 1,
@@ -9,14 +30,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "65fbbb13a8226e03",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/65fbbb13a8226e03",
+      "uid" : "ff0c38ed54e66398",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/ff0c38ed54e66398",
       "status" : "failed",
       "statusDetails" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
       "time" : {
-        "start" : 1741628129729,
-        "stop" : 1741628131037,
-        "duration" : 1308
+        "start" : 1741531530067,
+        "stop" : 1741531531459,
+        "duration" : 1392
       }
     } ]
   },
@@ -30,13 +51,34 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "68afeed19f6a9222",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/68afeed19f6a9222",
+      "uid" : "bed42e076ddcae8d",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/bed42e076ddcae8d",
       "status" : "passed",
       "time" : {
-        "start" : 1741628129849,
-        "stop" : 1741628132233,
-        "duration" : 2384
+        "start" : 1741628900985,
+        "stop" : 1741628903117,
+        "duration" : 2132
+      }
+    } ]
+  },
+  "b73fdc191ea9504d6a08b8f9e863f369:c42e4eb120398df7b1640a5725c5d83a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ae8fe66393fce482",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/ae8fe66393fce482",
+      "status" : "failed",
+      "statusDetails" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
+      "time" : {
+        "start" : 1741628912761,
+        "stop" : 1741628917067,
+        "duration" : 4306
       }
     } ]
   },
@@ -50,13 +92,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "89782177f30054ae",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/89782177f30054ae",
+      "uid" : "fbb0ecc4f64ef8d4",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/fbb0ecc4f64ef8d4",
       "status" : "passed",
       "time" : {
-        "start" : 1741628154852,
-        "stop" : 1741628157911,
-        "duration" : 3059
+        "start" : 1741628931526,
+        "stop" : 1741628936122,
+        "duration" : 4596
       }
     } ]
   },
@@ -70,33 +112,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d238a2eb0bc989e8",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/d238a2eb0bc989e8",
+      "uid" : "3b1fa7197b197079",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/3b1fa7197b197079",
       "status" : "passed",
       "time" : {
-        "start" : 1741628119367,
-        "stop" : 1741628120277,
-        "duration" : 910
-      }
-    } ]
-  },
-  "37f67c755cfdfbd49fc3f7cc97d99f91:c42e4eb120398df7b1640a5725c5d83a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "d2d60a9a73979c48",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/d2d60a9a73979c48",
-      "status" : "passed",
-      "time" : {
-        "start" : 1741628135905,
-        "stop" : 1741628137649,
-        "duration" : 1744
+        "start" : 1741628889544,
+        "stop" : 1741628890545,
+        "duration" : 1001
       }
     } ]
   },
@@ -110,13 +132,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f4ab3b0506f64a4",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/f4ab3b0506f64a4",
+      "uid" : "c47ce0a161ed7281",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/c47ce0a161ed7281",
       "status" : "passed",
       "time" : {
-        "start" : 1741628160525,
-        "stop" : 1741628161480,
-        "duration" : 955
+        "start" : 1741628937301,
+        "stop" : 1741628938389,
+        "duration" : 1088
+      }
+    } ]
+  },
+  "37f67c755cfdfbd49fc3f7cc97d99f91:c42e4eb120398df7b1640a5725c5d83a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "69af1f8f1685f8fb",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/69af1f8f1685f8fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741628910694,
+        "stop" : 1741628912862,
+        "duration" : 2168
       }
     } ]
   },
@@ -130,13 +172,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "61783e7588568fb9",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/61783e7588568fb9",
+      "uid" : "7a64d6cce0e6a2a7",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/7a64d6cce0e6a2a7",
       "status" : "passed",
       "time" : {
-        "start" : 1741628151156,
-        "stop" : 1741628151959,
-        "duration" : 803
+        "start" : 1741628927962,
+        "stop" : 1741628928660,
+        "duration" : 698
       }
     } ]
   },
@@ -150,13 +192,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "be2ee6176b632f53",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/be2ee6176b632f53",
+      "uid" : "73ef2e3e45efd002",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/73ef2e3e45efd002",
       "status" : "passed",
       "time" : {
-        "start" : 1741628134241,
-        "stop" : 1741628137150,
-        "duration" : 2909
+        "start" : 1741628907609,
+        "stop" : 1741628910685,
+        "duration" : 3076
       }
     } ]
   },
@@ -170,13 +212,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5a292e28256b140d",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/5a292e28256b140d",
+      "uid" : "800584a01f68d62a",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/800584a01f68d62a",
       "status" : "passed",
       "time" : {
-        "start" : 1741628161480,
-        "stop" : 1741628162827,
-        "duration" : 1347
+        "start" : 1741628938392,
+        "stop" : 1741628939539,
+        "duration" : 1147
       }
     } ]
   },
@@ -190,33 +232,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "56edb1a4cf4d077",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/56edb1a4cf4d077",
+      "uid" : "34b8b5b74e7de83d",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/34b8b5b74e7de83d",
       "status" : "passed",
       "time" : {
-        "start" : 1741628119363,
-        "stop" : 1741628120239,
-        "duration" : 876
-      }
-    } ]
-  },
-  "4ef1a9147b3873c868566ec483b9fa6d:483ec23660f592decbe63698f54f1a47" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "5e8c26546e0c815a",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/5e8c26546e0c815a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1741628124086,
-        "stop" : 1741628124552,
-        "duration" : 466
+        "start" : 1741628890548,
+        "stop" : 1741628891113,
+        "duration" : 565
       }
     } ]
   },
@@ -230,13 +252,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e4457a63f9edab6",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/e4457a63f9edab6",
+      "uid" : "7de1fc11163298f3",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/7de1fc11163298f3",
       "status" : "passed",
       "time" : {
-        "start" : 1741628146080,
-        "stop" : 1741628150071,
-        "duration" : 3991
+        "start" : 1741628923233,
+        "stop" : 1741628926975,
+        "duration" : 3742
+      }
+    } ]
+  },
+  "4ef1a9147b3873c868566ec483b9fa6d:483ec23660f592decbe63698f54f1a47" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "55e99c52c9fd1f7c",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/55e99c52c9fd1f7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741628898379,
+        "stop" : 1741628898854,
+        "duration" : 475
       }
     } ]
   },
@@ -250,13 +292,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ddbfa143a2b7ee1a",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/ddbfa143a2b7ee1a",
+      "uid" : "6ecdd288da2fed94",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/6ecdd288da2fed94",
       "status" : "passed",
       "time" : {
-        "start" : 1741628123587,
-        "stop" : 1741628124085,
-        "duration" : 498
+        "start" : 1741628897960,
+        "stop" : 1741628898379,
+        "duration" : 419
       }
     } ]
   },
@@ -270,13 +312,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b6e47beefa2013dc",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/b6e47beefa2013dc",
+      "uid" : "d520914a962684c2",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/d520914a962684c2",
       "status" : "passed",
       "time" : {
-        "start" : 1741628157429,
-        "stop" : 1741628159455,
-        "duration" : 2026
+        "start" : 1741628934340,
+        "stop" : 1741628936316,
+        "duration" : 1976
       }
     } ]
   },
@@ -290,13 +332,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b0cbd2ad79d8fcfb",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/b0cbd2ad79d8fcfb",
+      "uid" : "86d8584dcf5d5c81",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/86d8584dcf5d5c81",
       "status" : "passed",
       "time" : {
-        "start" : 1741628120243,
-        "stop" : 1741628120765,
-        "duration" : 522
+        "start" : 1741628891119,
+        "stop" : 1741628891583,
+        "duration" : 464
       }
     } ]
   },
@@ -310,13 +352,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bb27ed0fab401912",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/bb27ed0fab401912",
+      "uid" : "6434d5ea3b0a61b6",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/6434d5ea3b0a61b6",
       "status" : "passed",
       "time" : {
-        "start" : 1741628139988,
-        "stop" : 1741628141369,
-        "duration" : 1381
+        "start" : 1741628915479,
+        "stop" : 1741628916622,
+        "duration" : 1143
       }
     } ]
   },
@@ -330,13 +372,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "58e880dfeb50d9b9",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/58e880dfeb50d9b9",
+      "uid" : "713a365190adc1ad",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/713a365190adc1ad",
       "status" : "passed",
       "time" : {
-        "start" : 1741628122194,
-        "stop" : 1741628123103,
-        "duration" : 909
+        "start" : 1741628896401,
+        "stop" : 1741628897545,
+        "duration" : 1144
       }
     } ]
   },
@@ -350,33 +392,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a69d2abfcf68dbf3",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/a69d2abfcf68dbf3",
+      "uid" : "95d156412ad03896",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/95d156412ad03896",
       "status" : "passed",
       "time" : {
-        "start" : 1741628141373,
-        "stop" : 1741628144532,
-        "duration" : 3159
-      }
-    } ]
-  },
-  "492a1284df9cb7804a9a79224773edf9:c42e4eb120398df7b1640a5725c5d83a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "41dcaaf9800dd573",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/41dcaaf9800dd573",
-      "status" : "passed",
-      "time" : {
-        "start" : 1741628131779,
-        "stop" : 1741628134234,
-        "duration" : 2455
+        "start" : 1741628917813,
+        "stop" : 1741628921739,
+        "duration" : 3926
       }
     } ]
   },
@@ -390,13 +412,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "26907a0623c48578",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/26907a0623c48578",
+      "uid" : "7bfc7f435dd1e9bf",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/7bfc7f435dd1e9bf",
       "status" : "passed",
       "time" : {
-        "start" : 1741628137154,
-        "stop" : 1741628144615,
-        "duration" : 7461
+        "start" : 1741628916625,
+        "stop" : 1741628924160,
+        "duration" : 7535
+      }
+    } ]
+  },
+  "492a1284df9cb7804a9a79224773edf9:c42e4eb120398df7b1640a5725c5d83a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71839c90ef379ce8",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/71839c90ef379ce8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741628903120,
+        "stop" : 1741628903905,
+        "duration" : 785
       }
     } ]
   },
@@ -410,13 +452,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9a76f721fe210f3e",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/9a76f721fe210f3e",
+      "uid" : "4a6ed9a52478195e",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/4a6ed9a52478195e",
       "status" : "passed",
       "time" : {
-        "start" : 1741628132984,
-        "stop" : 1741628135901,
-        "duration" : 2917
+        "start" : 1741628904745,
+        "stop" : 1741628907605,
+        "duration" : 2860
       }
     } ]
   },
@@ -430,33 +472,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d148065deba4e6f4",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/d148065deba4e6f4",
+      "uid" : "7b1bf12a801fe965",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/7b1bf12a801fe965",
       "status" : "passed",
       "time" : {
-        "start" : 1741628132237,
-        "stop" : 1741628132971,
-        "duration" : 734
-      }
-    } ]
-  },
-  "486c11a09d4a2e6e53a590b2792cc2d9:16da5751320efd68221c8b8753b00279" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "e098f5ac48882ea2",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/e098f5ac48882ea2",
-      "status" : "passed",
-      "time" : {
-        "start" : 1741628157915,
-        "stop" : 1741628165236,
-        "duration" : 7321
+        "start" : 1741628903911,
+        "stop" : 1741628904740,
+        "duration" : 829
       }
     } ]
   },
@@ -470,13 +492,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "507a7bdd560e85bf",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/507a7bdd560e85bf",
+      "uid" : "9f372ec79962bfac",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/9f372ec79962bfac",
       "status" : "passed",
       "time" : {
-        "start" : 1741628150074,
-        "stop" : 1741628151150,
-        "duration" : 1076
+        "start" : 1741628926979,
+        "stop" : 1741628927958,
+        "duration" : 979
+      }
+    } ]
+  },
+  "486c11a09d4a2e6e53a590b2792cc2d9:16da5751320efd68221c8b8753b00279" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5ac22a6a4d4fc824",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/5ac22a6a4d4fc824",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741628936126,
+        "stop" : 1741628945480,
+        "duration" : 9354
       }
     } ]
   },
@@ -490,13 +532,34 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a4cb2e66669074eb",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/a4cb2e66669074eb",
+      "uid" : "603aabd1a82de734",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/603aabd1a82de734",
       "status" : "passed",
       "time" : {
-        "start" : 1741628120772,
-        "stop" : 1741628122795,
-        "duration" : 2023
+        "start" : 1741628894000,
+        "stop" : 1741628896596,
+        "duration" : 2596
+      }
+    } ]
+  },
+  "b73fdc191ea9504d6a08b8f9e863f369:483ec23660f592decbe63698f54f1a47" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c76837ac0ca84de",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/8c76837ac0ca84de",
+      "status" : "failed",
+      "statusDetails" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
+      "time" : {
+        "start" : 1741628894044,
+        "stop" : 1741628895882,
+        "duration" : 1838
       }
     } ]
   },
@@ -510,13 +573,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d1fcabc604df1a34",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/d1fcabc604df1a34",
+      "uid" : "45587ec009a495f3",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/45587ec009a495f3",
       "status" : "passed",
       "time" : {
-        "start" : 1741628138849,
-        "stop" : 1741628139987,
-        "duration" : 1138
+        "start" : 1741628914199,
+        "stop" : 1741628915479,
+        "duration" : 1280
       }
     } ]
   },
@@ -530,14 +593,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7aa60d130aec6a5b",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/7aa60d130aec6a5b",
+      "uid" : "c7ee3c7c1594668f",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/c7ee3c7c1594668f",
       "status" : "failed",
       "statusDetails" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
       "time" : {
-        "start" : 1741628171148,
-        "stop" : 1741628172875,
-        "duration" : 1727
+        "start" : 1741531558428,
+        "stop" : 1741531560456,
+        "duration" : 2028
       }
     } ]
   },
@@ -551,13 +614,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c334c3b6675abeaa",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/c334c3b6675abeaa",
+      "uid" : "ec8f8b55d7a91287",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/ec8f8b55d7a91287",
       "status" : "passed",
       "time" : {
-        "start" : 1741628151964,
-        "stop" : 1741628154849,
-        "duration" : 2885
+        "start" : 1741628928664,
+        "stop" : 1741628931523,
+        "duration" : 2859
       }
     } ]
   },
@@ -571,14 +634,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e6464ab08a4bef42",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/e6464ab08a4bef42",
+      "uid" : "9a57facfeee54859",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/9a57facfeee54859",
       "status" : "failed",
       "statusDetails" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
       "time" : {
-        "start" : 1741628152869,
-        "stop" : 1741628156848,
-        "duration" : 3979
+        "start" : 1741531545792,
+        "stop" : 1741531548410,
+        "duration" : 2618
       }
     } ]
   },
@@ -592,13 +655,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3dbb8562076bf27f",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/3dbb8562076bf27f",
+      "uid" : "3d5c1990cc4ef224",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/3d5c1990cc4ef224",
       "status" : "passed",
       "time" : {
-        "start" : 1741628120282,
-        "stop" : 1741628122189,
-        "duration" : 1907
+        "start" : 1741628891587,
+        "stop" : 1741628893991,
+        "duration" : 2404
       }
     } ]
   },
@@ -612,13 +675,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e6560535ea0237d7",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/e6560535ea0237d7",
+      "uid" : "8510f3c7e54490d7",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/8510f3c7e54490d7",
       "status" : "passed",
       "time" : {
-        "start" : 1741628124558,
-        "stop" : 1741628125917,
-        "duration" : 1359
+        "start" : 1741628898867,
+        "stop" : 1741628900258,
+        "duration" : 1391
       }
     } ]
   },
@@ -632,13 +695,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d2fdad5c31e9ae64",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/d2fdad5c31e9ae64",
+      "uid" : "1f950f1e7b9eb4cf",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/1f950f1e7b9eb4cf",
       "status" : "passed",
       "time" : {
-        "start" : 1741628122799,
-        "stop" : 1741628129201,
-        "duration" : 6402
+        "start" : 1741628896599,
+        "stop" : 1741628902306,
+        "duration" : 5707
       }
     } ]
   },
@@ -652,13 +715,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "45ded3227bcb20e8",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/45ded3227bcb20e8",
+      "uid" : "7bbfb682776e46c8",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/7bbfb682776e46c8",
       "status" : "passed",
       "time" : {
-        "start" : 1741628162841,
-        "stop" : 1741628167226,
-        "duration" : 4385
+        "start" : 1741628939549,
+        "stop" : 1741628944331,
+        "duration" : 4782
       }
     } ]
   },
@@ -672,13 +735,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3b6ee0b50391eab2",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/3b6ee0b50391eab2",
+      "uid" : "612f70951b070319",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/612f70951b070319",
       "status" : "passed",
       "time" : {
-        "start" : 1741628137649,
-        "stop" : 1741628138848,
-        "duration" : 1199
+        "start" : 1741628912862,
+        "stop" : 1741628914199,
+        "duration" : 1337
       }
     } ]
   },
@@ -692,13 +755,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6a6044c4f5db654a",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/6a6044c4f5db654a",
+      "uid" : "e9eb9321c86e3d22",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/e9eb9321c86e3d22",
       "status" : "passed",
       "time" : {
-        "start" : 1741628123104,
-        "stop" : 1741628123582,
-        "duration" : 478
+        "start" : 1741628897546,
+        "stop" : 1741628897959,
+        "duration" : 413
       }
     } ]
   },
@@ -712,13 +775,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "af8a3be7dd9aa2cb",
-      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/99/#testresult/af8a3be7dd9aa2cb",
+      "uid" : "b6e7f0ebf340e83f",
+      "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/100/#testresult/b6e7f0ebf340e83f",
       "status" : "passed",
       "time" : {
-        "start" : 1741628159456,
-        "stop" : 1741628160525,
-        "duration" : 1069
+        "start" : 1741628936317,
+        "stop" : 1741628937300,
+        "duration" : 983
       }
     } ]
   }
