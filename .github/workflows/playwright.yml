@@ -27,7 +27,9 @@ jobs:
       - name: Run Playwright tests
         run: |
           npx playwright install --with-deps
+          chmod -R +x node_modules/.bin
           npx playwright test --reporter=line,allure-playwright
+
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@v1
