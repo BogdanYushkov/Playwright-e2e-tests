@@ -1,1 +1,13 @@
-[{"data":{"failed":3,"broken":0,"skipped":0,"passed":33,"unknown":0,"total":36}}]
+[ {
+  "buildOrder" : 96,
+  "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/96",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 8,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 31,
+    "unknown" : 0,
+    "total" : 39
+  }
+} ]

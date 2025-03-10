@@ -1,1 +1,121 @@
-{"uid":"4b4757e66a1912dae1a509f688f20b0f","name":"categories","children":[{"name":"Product defects","children":[{"name":"Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"","children":[{"name":"Test Checkout without products","uid":"53bf226c48552e4d","parentUid":"715149c2f61f09e8eaa29540894d619d","status":"failed","time":{"start":1741531530067,"stop":1741531531459,"duration":1392},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":2,"retriesStatusChange":false,"parameters":["Chromium"],"tags":[]},{"name":"Test Checkout without products","uid":"8db93979790bb772","parentUid":"715149c2f61f09e8eaa29540894d619d","status":"failed","time":{"start":1741531545792,"stop":1741531548410,"duration":2618},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":2,"retriesStatusChange":false,"parameters":["Firefox"],"tags":[]},{"name":"Test Checkout without products","uid":"5f697bc3102c5fee","parentUid":"715149c2f61f09e8eaa29540894d619d","status":"failed","time":{"start":1741531558428,"stop":1741531560456,"duration":2028},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":2,"retriesStatusChange":false,"parameters":["WebKit"],"tags":[]}],"uid":"715149c2f61f09e8eaa29540894d619d"}],"uid":"8fb3a91ba5aaf9de24cc8a92edc82b5d"}]}
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
+      "children" : [ {
+        "name" : "Test Checkout without products",
+        "uid" : "25a64ff986422a11",
+        "parentUid" : "715149c2f61f09e8eaa29540894d619d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741531530067,
+          "stop" : 1741531531459,
+          "duration" : 1392
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chromium" ]
+      }, {
+        "name" : "Test Checkout without products",
+        "uid" : "2385d0e9e93f2ab5",
+        "parentUid" : "715149c2f61f09e8eaa29540894d619d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741531545792,
+          "stop" : 1741531548410,
+          "duration" : 2618
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Firefox" ]
+      }, {
+        "name" : "Test Checkout without products",
+        "uid" : "5ed2175aca551cde",
+        "parentUid" : "715149c2f61f09e8eaa29540894d619d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741531558428,
+          "stop" : 1741531560456,
+          "duration" : 2028
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "WebKit" ]
+      }, {
+        "name" : "Test Checkout without products",
+        "uid" : "e7ae6c4d2a788a04",
+        "parentUid" : "715149c2f61f09e8eaa29540894d619d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741626852600,
+          "stop" : 1741626854224,
+          "duration" : 1624
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chromium" ]
+      }, {
+        "name" : "Test Checkout without products",
+        "uid" : "12407da7a1996cdf",
+        "parentUid" : "715149c2f61f09e8eaa29540894d619d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741626867643,
+          "stop" : 1741626870964,
+          "duration" : 3321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Firefox" ]
+      }, {
+        "name" : "Test Checkout without products",
+        "uid" : "64824df15aa2db9a",
+        "parentUid" : "715149c2f61f09e8eaa29540894d619d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741626905368,
+          "stop" : 1741626907250,
+          "duration" : 1882
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "WebKit" ]
+      } ],
+      "uid" : "715149c2f61f09e8eaa29540894d619d"
+    }, {
+      "name" : "TimeoutError: browserContext.waitForEvent: Timeout 10000ms exceeded while waiting for event \"page\"",
+      "children" : [ {
+        "name" : "Test Footer Links",
+        "uid" : "19b0a5e174e0b2e3",
+        "parentUid" : "4c11c7ad7079e6b7443599e48c3d20f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741626878456,
+          "stop" : 1741626889663,
+          "duration" : 11207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Chromium" ]
+      }, {
+        "name" : "Test Footer Links",
+        "uid" : "9b2511c4076c0f78",
+        "parentUid" : "4c11c7ad7079e6b7443599e48c3d20f4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1741626910809,
+          "stop" : 1741626924490,
+          "duration" : 13681
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Firefox" ]
+      } ],
+      "uid" : "4c11c7ad7079e6b7443599e48c3d20f4"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

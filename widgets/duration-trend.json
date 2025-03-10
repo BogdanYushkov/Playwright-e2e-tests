@@ -1,1 +1,8 @@
-[{"data":{"duration":41456}}]
+[ {
+  "buildOrder" : 96,
+  "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/96",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 95427998
+  }
+} ]

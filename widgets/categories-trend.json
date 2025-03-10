@@ -1,1 +1,8 @@
-[{"data":{"Product defects":3}}]
+[ {
+  "buildOrder" : 96,
+  "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/96",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "Product defects" : 8
+  }
+} ]
