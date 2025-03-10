@@ -24,9 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Grant execute permissions to Playwright
+        run: chmod -R +x node_modules/.bin
+
       - name: Run Playwright tests
         run: |
-          npx playwright install --with-deps
+           npx playwright install --with-deps
+           npx playwright test --reporter=line,allure-playwright
+
 
 
       - name: Generate Allure Report
