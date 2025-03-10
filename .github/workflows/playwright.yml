@@ -84,15 +84,18 @@ jobs:
 
     - name: Ensure proper permissions and clean deployment
       run: |
-        sudo chmod -R 777 allure-report allure-history
-        sudo chown -R $USER:$USER allure-report allure-history
+        # Устанавливаем правильные права доступа для всех файлов в allure-report и allure-history
+        sudo chmod -R 777 allure-report
+        sudo chown -R $USER:$USER allure-report
         git fetch origin
         git checkout -B gh-pages origin/gh-pages
         git reset --hard origin/gh-pages
-        sudo rm -rf allure-report/* allure-history/*
+        sudo rm -rf allure-report/*
         git clean -fdx
-        git rm -rf allure-report/* allure-history/*
-      if: always()  # Выполнится всегда, даже если тесты не прошли.
+        if [ -d "allure-report" ]; then git rm -rf allure-report/*; fi
+        if [ -d "allure-history" ]; then git rm -rf allure-history/*; fi
+      if: always()  
+
 
 
     - name: Deploy Allure Report to GitHub Pages
