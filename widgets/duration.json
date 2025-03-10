@@ -1,361 +1,361 @@
 [ {
-  "uid" : "228d385fa8f1a0fe",
-  "name" : "Test Checkout without products",
-  "time" : {
-    "start" : 1741629369169,
-    "stop" : 1741629372829,
-    "duration" : 3660
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "8261bdfb9b0fb15c",
+  "uid" : "b981399635c216bd",
   "name" : "Test Sorting  'Name (A to Z)'",
   "time" : {
-    "start" : 1741629339483,
-    "stop" : 1741629341406,
-    "duration" : 1923
+    "start" : 1741632555628,
+    "stop" : 1741632557560,
+    "duration" : 1932
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bc8cf03cd359c566",
-  "name" : "Test Sorting 'Price (high to low)'",
-  "time" : {
-    "start" : 1741629324027,
-    "stop" : 1741629324388,
-    "duration" : 361
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "aa10d30623000d77",
-  "name" : "Test Valid Checkout",
-  "time" : {
-    "start" : 1741629358248,
-    "stop" : 1741629362318,
-    "duration" : 4070
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cb4e6e21c231dd62",
-  "name" : "Test login with invalid login",
-  "time" : {
-    "start" : 1741629320042,
-    "stop" : 1741629320667,
-    "duration" : 625
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ca008834d2242558",
-  "name" : "Test login with invalid login",
-  "time" : {
-    "start" : 1741629333359,
-    "stop" : 1741629334054,
-    "duration" : 695
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "71debca9d09c4483",
-  "name" : "Test login with invalid login",
-  "time" : {
-    "start" : 1741629377404,
-    "stop" : 1741629378041,
-    "duration" : 637
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "54e099f44eb27d41",
-  "name" : "Test login with invalid password",
-  "time" : {
-    "start" : 1741629376624,
-    "stop" : 1741629377401,
-    "duration" : 777
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "411a7f5544d7d92a",
+  "uid" : "f5e0d6f9e3631c93",
   "name" : "Test Sorting 'Price (low to high)'",
   "time" : {
-    "start" : 1741629387082,
-    "stop" : 1741629388259,
-    "duration" : 1177
+    "start" : 1741632544161,
+    "stop" : 1741632544681,
+    "duration" : 520
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "75af6919d14dd6a7",
+  "uid" : "7a9e85248cfc1060",
+  "name" : "Test login with invalid login",
+  "time" : {
+    "start" : 1741632569854,
+    "stop" : 1741632570792,
+    "duration" : 938
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26559b6959b0a0d0",
+  "name" : "Test Logout",
+  "time" : {
+    "start" : 1741632552861,
+    "stop" : 1741632557086,
+    "duration" : 4225
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd14dc0485377512",
+  "name" : "Test Valid Login",
+  "time" : {
+    "start" : 1741632548579,
+    "stop" : 1741632550929,
+    "duration" : 2350
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48304afef4d031f2",
+  "name" : "Test Valid Login",
+  "time" : {
+    "start" : 1741632566274,
+    "stop" : 1741632568741,
+    "duration" : 2467
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc07dde936838aba",
+  "name" : "Test Saving the card after logout",
+  "time" : {
+    "start" : 1741632573648,
+    "stop" : 1741632576941,
+    "duration" : 3293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbf04558db924ab3",
+  "name" : "Test login with invalid password",
+  "time" : {
+    "start" : 1741632550933,
+    "stop" : 1741632551760,
+    "duration" : 827
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b7bf08ecb9f440f",
+  "name" : "Test login with invalid password",
+  "time" : {
+    "start" : 1741632539856,
+    "stop" : 1741632540741,
+    "duration" : 885
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1710b3748cb08c2d",
+  "name" : "Test Logout",
+  "time" : {
+    "start" : 1741632540752,
+    "stop" : 1741632542708,
+    "duration" : 1956
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1cfc91fdce01afcb",
   "name" : "Test Sorting  'Name (A to Z)'",
   "time" : {
-    "start" : 1741629322115,
-    "stop" : 1741629323009,
-    "duration" : 894
+    "start" : 1741632576953,
+    "stop" : 1741632579047,
+    "duration" : 2094
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c147e0778c2ec5a5",
-  "name" : "Test Saving the card after logout",
+  "uid" : "68094699ddf656d3",
+  "name" : "Test login with invalid password",
   "time" : {
-    "start" : 1741629320672,
-    "stop" : 1741629322727,
-    "duration" : 2055
+    "start" : 1741632568743,
+    "stop" : 1741632569851,
+    "duration" : 1108
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1d59d70e015038c0",
-  "name" : "Test Logout",
-  "time" : {
-    "start" : 1741629378044,
-    "stop" : 1741629380534,
-    "duration" : 2490
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e7f8fb9e9825f94d",
-  "name" : "Test Logout",
-  "time" : {
-    "start" : 1741629334058,
-    "stop" : 1741629336821,
-    "duration" : 2763
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "41854a970c45f493",
-  "name" : "Test Footer Links",
-  "time" : {
-    "start" : 1741629411789,
-    "stop" : 1741629423393,
-    "duration" : 11604
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "51e2bfcc41eed2b4",
-  "name" : "Test Sorting 'Name (Z to A)'",
-  "time" : {
-    "start" : 1741629386074,
-    "stop" : 1741629387082,
-    "duration" : 1008
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f348c7457e7e18ff",
-  "name" : "Test Checkout without products",
-  "time" : {
-    "start" : 1741629397974,
-    "stop" : 1741629400057,
-    "duration" : 2083
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "3441db00d2c63191",
-  "name" : "Test Sorting 'Price (low to high)'",
-  "time" : {
-    "start" : 1741629342288,
-    "stop" : 1741629343191,
-    "duration" : 903
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1b0eb91b1a8668dc",
-  "name" : "Test Valid Checkout",
-  "time" : {
-    "start" : 1741629389441,
-    "stop" : 1741629392707,
-    "duration" : 3266
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "668f116248e4f585",
-  "name" : "Test Sorting 'Name (Z to A)'",
-  "time" : {
-    "start" : 1741629323009,
-    "stop" : 1741629323552,
-    "duration" : 543
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2672ee88d7646ff9",
-  "name" : "Test Sorting 'Name (Z to A)'",
-  "time" : {
-    "start" : 1741629341407,
-    "stop" : 1741629342288,
-    "duration" : 881
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "79bb2b417668eee0",
-  "name" : "Test Valid Login",
-  "time" : {
-    "start" : 1741629319079,
-    "stop" : 1741629320076,
-    "duration" : 997
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "38f00f506dd86d12",
-  "name" : "Test Saving the card after logout",
-  "time" : {
-    "start" : 1741629380537,
-    "stop" : 1741629384368,
-    "duration" : 3831
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "364afbe001aa3e30",
-  "name" : "Test Footer Links",
-  "time" : {
-    "start" : 1741629372060,
-    "stop" : 1741629385680,
-    "duration" : 13620
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "624b4177b84ec664",
-  "name" : "Test Saving the card after logout",
-  "time" : {
-    "start" : 1741629336824,
-    "stop" : 1741629339480,
-    "duration" : 2656
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d60f5292a673d4b3",
+  "uid" : "1ca7565e457d77a4",
   "name" : "Test Sorting  'Name (A to Z)'",
   "time" : {
-    "start" : 1741629384373,
-    "stop" : 1741629386073,
-    "duration" : 1700
+    "start" : 1741632542713,
+    "stop" : 1741632543633,
+    "duration" : 920
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e42d49462de88bdd",
-  "name" : "Test Sorting 'Price (high to low)'",
-  "time" : {
-    "start" : 1741629343191,
-    "stop" : 1741629344054,
-    "duration" : 863
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f6f62176d0d6a1c",
-  "name" : "Test login with invalid password",
-  "time" : {
-    "start" : 1741629332728,
-    "stop" : 1741629333356,
-    "duration" : 628
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a2bdb025996ab25a",
-  "name" : "Test Logout",
-  "time" : {
-    "start" : 1741629320081,
-    "stop" : 1741629322109,
-    "duration" : 2028
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "66d5d7eae98637eb",
+  "uid" : "758cadfc82d9eb72",
   "name" : "Test Sorting 'Price (low to high)'",
   "time" : {
-    "start" : 1741629323553,
-    "stop" : 1741629324027,
-    "duration" : 474
+    "start" : 1741632558840,
+    "stop" : 1741632560337,
+    "duration" : 1497
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "366d7fe3effada2c",
-  "name" : "Test Valid Login",
-  "time" : {
-    "start" : 1741629330732,
-    "stop" : 1741629332725,
-    "duration" : 1993
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d823ced94adbb034",
-  "name" : "Test Checkout without products",
-  "time" : {
-    "start" : 1741629329113,
-    "stop" : 1741629330189,
-    "duration" : 1076
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "f74353f654f1b0d1",
-  "name" : "Test login with invalid password",
-  "time" : {
-    "start" : 1741629319077,
-    "stop" : 1741629320038,
-    "duration" : 961
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "206dafd0fb88613e",
-  "name" : "Test Valid Login",
-  "time" : {
-    "start" : 1741629373484,
-    "stop" : 1741629376621,
-    "duration" : 3137
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ea6d33bc5fd346b3",
-  "name" : "Test Sorting 'Price (high to low)'",
-  "time" : {
-    "start" : 1741629388259,
-    "stop" : 1741629389433,
-    "duration" : 1174
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5833660e536e9320",
+  "uid" : "33ccce04f2efe013",
   "name" : "Test Valid Checkout",
   "time" : {
-    "start" : 1741629324392,
-    "stop" : 1741629325703,
-    "duration" : 1311
+    "start" : 1741632582154,
+    "stop" : 1741632586709,
+    "duration" : 4555
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "82fc8bbf2f60b372",
+  "uid" : "740269dd6ad575f1",
+  "name" : "Test Sorting 'Name (Z to A)'",
+  "time" : {
+    "start" : 1741632543634,
+    "stop" : 1741632544160,
+    "duration" : 526
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb630649f6226a42",
+  "name" : "Test login with invalid login",
+  "time" : {
+    "start" : 1741632540750,
+    "stop" : 1741632541345,
+    "duration" : 595
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26be32fb7009ca29",
+  "name" : "Test Valid Checkout",
+  "time" : {
+    "start" : 1741632545166,
+    "stop" : 1741632546583,
+    "duration" : 1417
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "797129ebb990308d",
+  "name" : "Test Sorting 'Price (high to low)'",
+  "time" : {
+    "start" : 1741632560337,
+    "stop" : 1741632561895,
+    "duration" : 1558
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3733c635ec413c78",
   "name" : "Test Footer Links",
   "time" : {
-    "start" : 1741629346534,
-    "stop" : 1741629357530,
-    "duration" : 10996
+    "start" : 1741632557090,
+    "stop" : 1741632563995,
+    "duration" : 6905
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de9d0a32c177c13",
+  "name" : "Test Checkout without products",
+  "time" : {
+    "start" : 1741632550666,
+    "stop" : 1741632552173,
+    "duration" : 1507
   },
   "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a7201e3c109c153",
+  "name" : "Test Sorting 'Price (low to high)'",
+  "time" : {
+    "start" : 1741632580076,
+    "stop" : 1741632581080,
+    "duration" : 1004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9346f6da275a956b",
+  "name" : "Test Sorting 'Name (Z to A)'",
+  "time" : {
+    "start" : 1741632557560,
+    "stop" : 1741632558839,
+    "duration" : 1279
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba44bac8f76cf5d",
+  "name" : "Test Footer Links",
+  "time" : {
+    "start" : 1741632576945,
+    "stop" : 1741632583307,
+    "duration" : 6362
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae1bbf9146fb6e41",
+  "name" : "Test Checkout without products",
+  "time" : {
+    "start" : 1741632572209,
+    "stop" : 1741632576373,
+    "duration" : 4164
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3408ec01daca7155",
+  "name" : "Test Sorting 'Price (high to low)'",
+  "time" : {
+    "start" : 1741632544682,
+    "stop" : 1741632545160,
+    "duration" : 478
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c059e03221857c9e",
+  "name" : "Test Footer Links",
+  "time" : {
+    "start" : 1741632543420,
+    "stop" : 1741632547908,
+    "duration" : 4488
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f4b589b8a85bd30",
+  "name" : "Test Saving the card after logout",
+  "time" : {
+    "start" : 1741632552575,
+    "stop" : 1741632555623,
+    "duration" : 3048
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31999681a5a26063",
+  "name" : "Test login with invalid login",
+  "time" : {
+    "start" : 1741632551763,
+    "stop" : 1741632552570,
+    "duration" : 807
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75b5b5b1e23d18d8",
+  "name" : "Test Valid Login",
+  "time" : {
+    "start" : 1741632539848,
+    "stop" : 1741632540746,
+    "duration" : 898
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be35fd995870c46a",
+  "name" : "Test Checkout without products",
+  "time" : {
+    "start" : 1741632590089,
+    "stop" : 1741632591854,
+    "duration" : 1765
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "98fcb73408834495",
+  "name" : "Test Sorting 'Name (Z to A)'",
+  "time" : {
+    "start" : 1741632579048,
+    "stop" : 1741632580075,
+    "duration" : 1027
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2d833396aea7a9e",
+  "name" : "Test Valid Checkout",
+  "time" : {
+    "start" : 1741632561899,
+    "stop" : 1741632564638,
+    "duration" : 2739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c0f7d0b5d37a4d4",
+  "name" : "Test Sorting 'Price (high to low)'",
+  "time" : {
+    "start" : 1741632581086,
+    "stop" : 1741632582149,
+    "duration" : 1063
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b4ad68f805e0e59",
+  "name" : "Test Logout",
+  "time" : {
+    "start" : 1741632570797,
+    "stop" : 1741632573645,
+    "duration" : 2848
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a7f47918aa98c7e",
+  "name" : "Test Saving the card after logout",
+  "time" : {
+    "start" : 1741632541350,
+    "stop" : 1741632543415,
+    "duration" : 2065
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

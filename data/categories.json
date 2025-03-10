@@ -6,88 +6,45 @@
       "name" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
       "children" : [ {
         "name" : "Test Checkout without products",
-        "uid" : "d823ced94adbb034",
+        "uid" : "de9d0a32c177c13",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1741629329113,
-          "stop" : 1741629330189,
-          "duration" : 1076
+          "start" : 1741632550666,
+          "stop" : 1741632552173,
+          "duration" : 1507
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "Chromium" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "228d385fa8f1a0fe",
+        "uid" : "ae1bbf9146fb6e41",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1741629369169,
-          "stop" : 1741629372829,
-          "duration" : 3660
+          "start" : 1741632572209,
+          "stop" : 1741632576373,
+          "duration" : 4164
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "Firefox" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "f348c7457e7e18ff",
+        "uid" : "be35fd995870c46a",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1741629397974,
-          "stop" : 1741629400057,
-          "duration" : 2083
+          "start" : 1741632590089,
+          "stop" : 1741632591854,
+          "duration" : 1765
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "WebKit" ]
       } ],
       "uid" : "715149c2f61f09e8eaa29540894d619d"
-    }, {
-      "name" : "TimeoutError: browserContext.waitForEvent: Timeout 10000ms exceeded while waiting for event \"page\"",
-      "children" : [ {
-        "name" : "Test Footer Links",
-        "uid" : "82fc8bbf2f60b372",
-        "parentUid" : "4c11c7ad7079e6b7443599e48c3d20f4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1741629346534,
-          "stop" : 1741629357530,
-          "duration" : 10996
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Chromium" ]
-      }, {
-        "name" : "Test Footer Links",
-        "uid" : "364afbe001aa3e30",
-        "parentUid" : "4c11c7ad7079e6b7443599e48c3d20f4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1741629372060,
-          "stop" : 1741629385680,
-          "duration" : 13620
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "Firefox" ]
-      }, {
-        "name" : "Test Footer Links",
-        "uid" : "41854a970c45f493",
-        "parentUid" : "4c11c7ad7079e6b7443599e48c3d20f4",
-        "status" : "failed",
-        "time" : {
-          "start" : 1741629411789,
-          "stop" : 1741629423393,
-          "duration" : 11604
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "WebKit" ]
-      } ],
-      "uid" : "4c11c7ad7079e6b7443599e48c3d20f4"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],

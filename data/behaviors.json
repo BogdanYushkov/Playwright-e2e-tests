@@ -1,469 +1,469 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
-    "name" : "Test login with invalid password",
-    "uid" : "f74353f654f1b0d1",
+    "name" : "Test Valid Login",
+    "uid" : "75b5b5b1e23d18d8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629319077,
-      "stop" : 1741629320038,
-      "duration" : 961
+      "start" : 1741632539848,
+      "stop" : 1741632540746,
+      "duration" : 898
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
-    "name" : "Test Valid Login",
-    "uid" : "79bb2b417668eee0",
+    "name" : "Test login with invalid password",
+    "uid" : "4b7bf08ecb9f440f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629319079,
-      "stop" : 1741629320076,
-      "duration" : 997
+      "start" : 1741632539856,
+      "stop" : 1741632540741,
+      "duration" : 885
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test login with invalid login",
-    "uid" : "cb4e6e21c231dd62",
+    "uid" : "eb630649f6226a42",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629320042,
-      "stop" : 1741629320667,
-      "duration" : 625
+      "start" : 1741632540750,
+      "stop" : 1741632541345,
+      "duration" : 595
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Logout",
-    "uid" : "a2bdb025996ab25a",
+    "uid" : "1710b3748cb08c2d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629320081,
-      "stop" : 1741629322109,
-      "duration" : 2028
+      "start" : 1741632540752,
+      "stop" : 1741632542708,
+      "duration" : 1956
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Saving the card after logout",
-    "uid" : "c147e0778c2ec5a5",
+    "uid" : "6a7f47918aa98c7e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629320672,
-      "stop" : 1741629322727,
-      "duration" : 2055
+      "start" : 1741632541350,
+      "stop" : 1741632543415,
+      "duration" : 2065
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Sorting  'Name (A to Z)'",
-    "uid" : "75af6919d14dd6a7",
+    "uid" : "1ca7565e457d77a4",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629322115,
-      "stop" : 1741629323009,
-      "duration" : 894
+      "start" : 1741632542713,
+      "stop" : 1741632543633,
+      "duration" : 920
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Chromium" ]
+  }, {
+    "name" : "Test Footer Links",
+    "uid" : "c059e03221857c9e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632543420,
+      "stop" : 1741632547908,
+      "duration" : 4488
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Sorting 'Name (Z to A)'",
-    "uid" : "668f116248e4f585",
+    "uid" : "740269dd6ad575f1",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629323009,
-      "stop" : 1741629323552,
-      "duration" : 543
+      "start" : 1741632543634,
+      "stop" : 1741632544160,
+      "duration" : 526
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Sorting 'Price (low to high)'",
-    "uid" : "66d5d7eae98637eb",
+    "uid" : "f5e0d6f9e3631c93",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629323553,
-      "stop" : 1741629324027,
-      "duration" : 474
+      "start" : 1741632544161,
+      "stop" : 1741632544681,
+      "duration" : 520
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Sorting 'Price (high to low)'",
-    "uid" : "bc8cf03cd359c566",
+    "uid" : "3408ec01daca7155",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629324027,
-      "stop" : 1741629324388,
-      "duration" : 361
+      "start" : 1741632544682,
+      "stop" : 1741632545160,
+      "duration" : 478
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Valid Checkout",
-    "uid" : "5833660e536e9320",
+    "uid" : "26be32fb7009ca29",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629324392,
-      "stop" : 1741629325703,
-      "duration" : 1311
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Chromium" ]
-  }, {
-    "name" : "Test Checkout without products",
-    "uid" : "d823ced94adbb034",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
-    "time" : {
-      "start" : 1741629329113,
-      "stop" : 1741629330189,
-      "duration" : 1076
+      "start" : 1741632545166,
+      "stop" : 1741632546583,
+      "duration" : 1417
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Chromium" ]
   }, {
     "name" : "Test Valid Login",
-    "uid" : "366d7fe3effada2c",
+    "uid" : "dd14dc0485377512",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629330732,
-      "stop" : 1741629332725,
-      "duration" : 1993
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test login with invalid password",
-    "uid" : "f6f62176d0d6a1c",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629332728,
-      "stop" : 1741629333356,
-      "duration" : 628
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test login with invalid login",
-    "uid" : "ca008834d2242558",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629333359,
-      "stop" : 1741629334054,
-      "duration" : 695
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test Logout",
-    "uid" : "e7f8fb9e9825f94d",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629334058,
-      "stop" : 1741629336821,
-      "duration" : 2763
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test Saving the card after logout",
-    "uid" : "624b4177b84ec664",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629336824,
-      "stop" : 1741629339480,
-      "duration" : 2656
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test Sorting  'Name (A to Z)'",
-    "uid" : "8261bdfb9b0fb15c",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629339483,
-      "stop" : 1741629341406,
-      "duration" : 1923
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test Sorting 'Name (Z to A)'",
-    "uid" : "2672ee88d7646ff9",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629341407,
-      "stop" : 1741629342288,
-      "duration" : 881
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test Sorting 'Price (low to high)'",
-    "uid" : "3441db00d2c63191",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629342288,
-      "stop" : 1741629343191,
-      "duration" : 903
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test Sorting 'Price (high to low)'",
-    "uid" : "e42d49462de88bdd",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629343191,
-      "stop" : 1741629344054,
-      "duration" : 863
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Firefox" ]
-  }, {
-    "name" : "Test Footer Links",
-    "uid" : "82fc8bbf2f60b372",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
-    "time" : {
-      "start" : 1741629346534,
-      "stop" : 1741629357530,
-      "duration" : 10996
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "Chromium" ]
-  }, {
-    "name" : "Test Valid Checkout",
-    "uid" : "aa10d30623000d77",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629358248,
-      "stop" : 1741629362318,
-      "duration" : 4070
+      "start" : 1741632548579,
+      "stop" : 1741632550929,
+      "duration" : 2350
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Firefox" ]
   }, {
     "name" : "Test Checkout without products",
-    "uid" : "228d385fa8f1a0fe",
+    "uid" : "de9d0a32c177c13",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
-      "start" : 1741629369169,
-      "stop" : 1741629372829,
-      "duration" : 3660
+      "start" : 1741632550666,
+      "stop" : 1741632552173,
+      "duration" : 1507
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Chromium" ]
+  }, {
+    "name" : "Test login with invalid password",
+    "uid" : "bbf04558db924ab3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632550933,
+      "stop" : 1741632551760,
+      "duration" : 827
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test login with invalid login",
+    "uid" : "31999681a5a26063",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632551763,
+      "stop" : 1741632552570,
+      "duration" : 807
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Saving the card after logout",
+    "uid" : "2f4b589b8a85bd30",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632552575,
+      "stop" : 1741632555623,
+      "duration" : 3048
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Logout",
+    "uid" : "26559b6959b0a0d0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632552861,
+      "stop" : 1741632557086,
+      "duration" : 4225
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Sorting  'Name (A to Z)'",
+    "uid" : "b981399635c216bd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632555628,
+      "stop" : 1741632557560,
+      "duration" : 1932
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Firefox" ]
   }, {
     "name" : "Test Footer Links",
-    "uid" : "364afbe001aa3e30",
+    "uid" : "3733c635ec413c78",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "failed",
+    "status" : "passed",
     "time" : {
-      "start" : 1741629372060,
-      "stop" : 1741629385680,
-      "duration" : 13620
+      "start" : 1741632557090,
+      "stop" : 1741632563995,
+      "duration" : 6905
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Sorting 'Name (Z to A)'",
+    "uid" : "9346f6da275a956b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632557560,
+      "stop" : 1741632558839,
+      "duration" : 1279
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Sorting 'Price (low to high)'",
+    "uid" : "758cadfc82d9eb72",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632558840,
+      "stop" : 1741632560337,
+      "duration" : 1497
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Sorting 'Price (high to low)'",
+    "uid" : "797129ebb990308d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632560337,
+      "stop" : 1741632561895,
+      "duration" : 1558
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Valid Checkout",
+    "uid" : "d2d833396aea7a9e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632561899,
+      "stop" : 1741632564638,
+      "duration" : 2739
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "Firefox" ]
   }, {
     "name" : "Test Valid Login",
-    "uid" : "206dafd0fb88613e",
+    "uid" : "48304afef4d031f2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629373484,
-      "stop" : 1741629376621,
-      "duration" : 3137
+      "start" : 1741632566274,
+      "stop" : 1741632568741,
+      "duration" : 2467
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "WebKit" ]
   }, {
     "name" : "Test login with invalid password",
-    "uid" : "54e099f44eb27d41",
+    "uid" : "68094699ddf656d3",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629376624,
-      "stop" : 1741629377401,
-      "duration" : 777
+      "start" : 1741632568743,
+      "stop" : 1741632569851,
+      "duration" : 1108
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "WebKit" ]
   }, {
     "name" : "Test login with invalid login",
-    "uid" : "71debca9d09c4483",
+    "uid" : "7a9e85248cfc1060",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629377404,
-      "stop" : 1741629378041,
-      "duration" : 637
+      "start" : 1741632569854,
+      "stop" : 1741632570792,
+      "duration" : 938
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "WebKit" ]
   }, {
     "name" : "Test Logout",
-    "uid" : "1d59d70e015038c0",
+    "uid" : "7b4ad68f805e0e59",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1741629378044,
-      "stop" : 1741629380534,
-      "duration" : 2490
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "WebKit" ]
-  }, {
-    "name" : "Test Saving the card after logout",
-    "uid" : "38f00f506dd86d12",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629380537,
-      "stop" : 1741629384368,
-      "duration" : 3831
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "WebKit" ]
-  }, {
-    "name" : "Test Sorting  'Name (A to Z)'",
-    "uid" : "d60f5292a673d4b3",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629384373,
-      "stop" : 1741629386073,
-      "duration" : 1700
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "WebKit" ]
-  }, {
-    "name" : "Test Sorting 'Name (Z to A)'",
-    "uid" : "51e2bfcc41eed2b4",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629386074,
-      "stop" : 1741629387082,
-      "duration" : 1008
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "WebKit" ]
-  }, {
-    "name" : "Test Sorting 'Price (low to high)'",
-    "uid" : "411a7f5544d7d92a",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629387082,
-      "stop" : 1741629388259,
-      "duration" : 1177
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "WebKit" ]
-  }, {
-    "name" : "Test Sorting 'Price (high to low)'",
-    "uid" : "ea6d33bc5fd346b3",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629388259,
-      "stop" : 1741629389433,
-      "duration" : 1174
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ "WebKit" ]
-  }, {
-    "name" : "Test Valid Checkout",
-    "uid" : "1b0eb91b1a8668dc",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1741629389441,
-      "stop" : 1741629392707,
-      "duration" : 3266
+      "start" : 1741632570797,
+      "stop" : 1741632573645,
+      "duration" : 2848
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "WebKit" ]
   }, {
     "name" : "Test Checkout without products",
-    "uid" : "f348c7457e7e18ff",
+    "uid" : "ae1bbf9146fb6e41",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
-      "start" : 1741629397974,
-      "stop" : 1741629400057,
-      "duration" : 2083
+      "start" : 1741632572209,
+      "stop" : 1741632576373,
+      "duration" : 4164
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Firefox" ]
+  }, {
+    "name" : "Test Saving the card after logout",
+    "uid" : "fc07dde936838aba",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632573648,
+      "stop" : 1741632576941,
+      "duration" : 3293
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ "WebKit" ]
   }, {
     "name" : "Test Footer Links",
-    "uid" : "41854a970c45f493",
+    "uid" : "ba44bac8f76cf5d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632576945,
+      "stop" : 1741632583307,
+      "duration" : 6362
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "WebKit" ]
+  }, {
+    "name" : "Test Sorting  'Name (A to Z)'",
+    "uid" : "1cfc91fdce01afcb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632576953,
+      "stop" : 1741632579047,
+      "duration" : 2094
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "WebKit" ]
+  }, {
+    "name" : "Test Sorting 'Name (Z to A)'",
+    "uid" : "98fcb73408834495",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632579048,
+      "stop" : 1741632580075,
+      "duration" : 1027
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "WebKit" ]
+  }, {
+    "name" : "Test Sorting 'Price (low to high)'",
+    "uid" : "7a7201e3c109c153",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632580076,
+      "stop" : 1741632581080,
+      "duration" : 1004
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "WebKit" ]
+  }, {
+    "name" : "Test Sorting 'Price (high to low)'",
+    "uid" : "3c0f7d0b5d37a4d4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632581086,
+      "stop" : 1741632582149,
+      "duration" : 1063
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "WebKit" ]
+  }, {
+    "name" : "Test Valid Checkout",
+    "uid" : "33ccce04f2efe013",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1741632582154,
+      "stop" : 1741632586709,
+      "duration" : 4555
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "WebKit" ]
+  }, {
+    "name" : "Test Checkout without products",
+    "uid" : "be35fd995870c46a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
-      "start" : 1741629411789,
-      "stop" : 1741629423393,
-      "duration" : 11604
+      "start" : 1741632590089,
+      "stop" : 1741632591854,
+      "duration" : 1765
     },
     "flaky" : false,
     "newFailed" : false,
