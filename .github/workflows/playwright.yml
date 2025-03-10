@@ -1,7 +1,7 @@
 name: Playwright Tests
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   test:
@@ -28,20 +28,20 @@ jobs:
 
       - name: Generate Allure report
         run: |
-          npx allure generate allure-results --clean -o allure-report
+          npx allure generate allure-results --clean -o allure-report-${{ github.run_id }}  # Уникальная папка с отчетом
 
       - name: Upload Allure report as an artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-report
-          path: allure-report/
+          name: allure-report-${{ github.run_id }}  # Уникальное имя артефакта
+          path: ./allure-report-${{ github.run_id }}  # Уникальная директория для артефакта
           retention-days: 7
 
       - name: Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           branch: gh-pages
-          folder: allure-report
+          folder: allure-report-${{ github.run_id }}  # Уникальная папка для деплоя
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
