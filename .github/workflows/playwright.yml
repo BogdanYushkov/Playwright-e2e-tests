@@ -92,8 +92,11 @@ jobs:
 
     - name: Check if allure-report has content
       run: |
-        echo "Checking allure-report content..."
-        ls -l allure-report || echo "allure-report is empty or not created"
+        if [ "$(ls -A allure-report)" ]; then
+          echo "allure-report is not empty, proceeding with cleanup."
+        else
+          echo "allure-report is empty, skipping cleanup."
+        fi
       if: always()  # Этот шаг выполнится всегда.
 
     - name: Ensure proper permissions and clean deployment
