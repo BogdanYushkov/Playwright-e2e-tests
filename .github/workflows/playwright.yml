@@ -82,6 +82,14 @@ jobs:
         git config --global user.email "github-actions@github.com"
       if: always()  
 
+    - name: Ensure allure-report folder exists
+      run: |
+        if [ ! -d "allure-report" ]; then
+          echo "allure-report folder does not exist, creating..."
+          mkdir allure-report
+        fi
+      if: always()  # Этот шаг выполнится всегда.
+
     - name: Ensure proper permissions and clean deployment
       run: |
         sudo chmod -R 777 allure-report allure-history
@@ -94,10 +102,6 @@ jobs:
         git clean -fdx
         if [ -d "allure-report" ]; then git rm -rf allure-report/*; fi
       if: always()  
-
-
-
-
 
     - name: Deploy Allure Report to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
