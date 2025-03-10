@@ -84,8 +84,8 @@ jobs:
 
     - name: Clean up previous deployment
       run: |
-        git fetch --prune --no-guess
-        git checkout gh-pages
+        git fetch origin
+        git checkout -B gh-pages origin/gh-pages
         git reset --hard origin/gh-pages
         git clean -fdx
       if: always()  # Выполнится всегда.
