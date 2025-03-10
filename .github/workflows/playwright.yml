@@ -99,6 +99,12 @@ jobs:
         fi
       if: always()  # Этот шаг выполнится всегда.
 
+    - name: Create gh-pages branch if it doesn't exist
+      run: |
+        git fetch origin
+        git branch -r | grep -q "origin/gh-pages" || git checkout --orphan gh-pages
+      if: always()  # Этот шаг выполнится всегда.
+
     - name: Add Allure report files to git
       run: |
         git add allure-report/*
