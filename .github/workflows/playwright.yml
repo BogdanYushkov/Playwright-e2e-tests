@@ -9,39 +9,66 @@ on:
       - main
 
 jobs:
-  test:
+  install-dependencies:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install system dependencies for Playwright
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y 
 
-      - name: Grant execute permissions to Playwright
-        run: chmod -R +x node_modules/.bin
+    - name: Install dependencies
+      run: |
+        npm install
 
-      - name: Run Playwright tests
-        run: |
-           npx playwright install --with-deps
-           npx playwright test --reporter=line,allure-playwright
+  test:
+    needs: install-dependencies
+    runs-on: ubuntu-22.04
 
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-      - name: Generate Allure Report
-        uses: simple-elf/allure-report-action@v1
-        with:
-          results-dir: allure-results
-          report-dir: allure-report
+    - name: Install dependencies
+      run: |
+        npm install
 
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report
+    - name: Grant execute permissions to Playwright
+      run: |
+        chmod +x ./node_modules/.bin/playwright
+
+    - name: Run Playwright tests
+      run: |
+        npx playwright install --with-deps
+        npx playwright test --reporter=line,allure-playwright
+      env:
+        ALLURE_RESULTS_DIR: allure-results
+
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+
+    - name: Check Allure results directory
+      run: ls -l allure-results
+
+    - name: Generate Allure Report
+      uses: simple-elf/allure-report-action@master
+      with:
+        results-dir: allure-results
+        report-dir: allure-report
