@@ -63,12 +63,15 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '11'
+      if: always()  # Этот шаг выполнится всегда, даже если тесты не прошли.
 
     - name: Check Allure results directory
       run: ls -l allure-results
+      if: always()  # Выполнится всегда.
 
     - name: Generate Allure Report
       uses: simple-elf/allure-report-action@master
       with:
         results-dir: allure-results
         report-dir: allure-report
+      if: always()  # Этот шаг также выполнится всегда.
