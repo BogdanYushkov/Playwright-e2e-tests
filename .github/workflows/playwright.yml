@@ -93,31 +93,25 @@ jobs:
     - name: Check if allure-report has content
       run: |
         if [ "$(ls -A allure-report)" ]; then
-          echo "allure-report is not empty, proceeding with cleanup."
+          echo "allure-report is not empty, proceeding with deployment."
         else
-          echo "allure-report is empty, skipping cleanup."
+          echo "allure-report is empty, skipping deployment."
         fi
       if: always()  # Этот шаг выполнится всегда.
 
-    - name: Ensure proper permissions and clean deployment
+    - name: Add Allure report files to git
       run: |
-        sudo chmod -R 777 allure-report allure-history
-        sudo chown -R $USER:$USER allure-report allure-history
-        git fetch origin
-        git checkout -B gh-pages origin/gh-pages
-        git reset --hard origin/gh-pages
-        sudo rm -rf allure-report/*
-        sudo rm -rf allure-history/*
-        git clean -fdx
-        if [ -d "allure-report" ]; then git rm -rf allure-report/*; fi
-      if: always()  
+        git add allure-report/*
+        git commit -m "Add Allure report"
+        git push origin gh-pages
+      if: always()  # Этот шаг выполнится всегда.
 
     - name: Deploy Allure Report to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
         folder: allure-report
-        clean: true
+        clean: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: always()  # Этот шаг выполнится всегда.
