@@ -1,0 +1,577 @@
+{
+  "uid" : "8a2556dd50967dbb",
+  "name" : "Test Checkout without products",
+  "fullName" : "testCaseId9.spec.js#Test Checkout without products",
+  "historyId" : "4a7f0ac9a4b7fe67d44722824e2f9750:c42e4eb120398df7b1640a5725c5d83a",
+  "time" : {
+    "start" : 1741628144535,
+    "stop" : 1741628147641,
+    "duration" : 3106
+  },
+  "status" : "failed",
+  "statusMessage" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
+  "statusTrace" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"\n    at /home/runner/work/Playwright-e2e-tests/Playwright-e2e-tests/tests/testCaseId9.spec.js:40:25",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
+    "statusTrace" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"\n    at /home/runner/work/Playwright-e2e-tests/Playwright-e2e-tests/tests/testCaseId9.spec.js:40:25",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1741628144538,
+        "stop" : 1741628145430,
+        "duration" : 892
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "beforeAll hook",
+        "time" : {
+          "start" : 1741628144538,
+          "stop" : 1741628145428,
+          "duration" : 890
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browser.newContext",
+          "time" : {
+            "start" : 1741628144541,
+            "stop" : 1741628144552,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browserContext.newPage",
+          "time" : {
+            "start" : 1741628144556,
+            "stop" : 1741628144823,
+            "duration" : 267
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "page.goto(https://www.saucedemo.com)",
+          "time" : {
+            "start" : 1741628144824,
+            "stop" : 1741628145086,
+            "duration" : 262
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "page.fill(#user-name)",
+          "time" : {
+            "start" : 1741628145091,
+            "stop" : 1741628145184,
+            "duration" : 93
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "page.fill(#password)",
+          "time" : {
+            "start" : 1741628145188,
+            "stop" : 1741628145223,
+            "duration" : 35
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "page.click(#login-button)",
+          "time" : {
+            "start" : 1741628145225,
+            "stop" : 1741628145307,
+            "duration" : 82
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "page.waitForURL",
+          "time" : {
+            "start" : 1741628145309,
+            "stop" : 1741628145311,
+            "duration" : 2
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browserContext.storageState",
+          "time" : {
+            "start" : 1741628145311,
+            "stop" : 1741628145326,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "browserContext.close",
+          "time" : {
+            "start" : 1741628145419,
+            "stop" : 1741628145428,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 9,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 10,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "browser.newContext",
+      "time" : {
+        "start" : 1741628145432,
+        "stop" : 1741628145710,
+        "duration" : 278
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "browserContext.newPage",
+      "time" : {
+        "start" : 1741628145712,
+        "stop" : 1741628145946,
+        "duration" : 234
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.goto(https://www.saucedemo.com/inventory.html)",
+      "time" : {
+        "start" : 1741628145947,
+        "stop" : 1741628146275,
+        "duration" : 328
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.click(#shopping_cart_container)",
+      "time" : {
+        "start" : 1741628146276,
+        "stop" : 1741628146535,
+        "duration" : 259
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.count(.cart_list >> > div)",
+      "time" : {
+        "start" : 1741628146536,
+        "stop" : 1741628146555,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.waitForURL",
+      "time" : {
+        "start" : 1741628146556,
+        "stop" : 1741628146556,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toBeLessThanOrEqual",
+      "time" : {
+        "start" : 1741628146557,
+        "stop" : 1741628146557,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.click(#checkout)",
+      "time" : {
+        "start" : 1741628146558,
+        "stop" : 1741628146686,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.textContent(.checkout_info)",
+      "time" : {
+        "start" : 1741628146686,
+        "stop" : 1741628146690,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toContain",
+      "time" : {
+        "start" : 1741628146691,
+        "stop" : 1741628146693,
+        "duration" : 2
+      },
+      "status" : "failed",
+      "statusMessage" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
+      "statusTrace" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"\n    at /home/runner/work/Playwright-e2e-tests/Playwright-e2e-tests/tests/testCaseId9.spec.js:40:25",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1741628146694,
+        "stop" : 1741628146910,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.screenshot",
+        "time" : {
+          "start" : 1741628146695,
+          "stop" : 1741628146833,
+          "duration" : 138
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.screenshot",
+        "time" : {
+          "start" : 1741628146697,
+          "stop" : 1741628146894,
+          "duration" : 197
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.screenshot",
+        "time" : {
+          "start" : 1741628146698,
+          "stop" : 1741628146907,
+          "duration" : 209
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.screenshot",
+        "time" : {
+          "start" : 1741628146699,
+          "stop" : 1741628146864,
+          "duration" : 165
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.screenshot",
+        "time" : {
+          "start" : 1741628146700,
+          "stop" : 1741628146864,
+          "duration" : 164
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.screenshot",
+        "time" : {
+          "start" : 1741628146701,
+          "stop" : 1741628146908,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.screenshot",
+        "time" : {
+          "start" : 1741628146702,
+          "stop" : 1741628146908,
+          "duration" : 206
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Worker Cleanup",
+      "time" : {
+        "start" : 1741628146910,
+        "stop" : 1741628147636,
+        "duration" : 726
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "fixture: browser",
+        "time" : {
+          "start" : 1741628146911,
+          "stop" : 1741628147636,
+          "duration" : 725
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "80339032b40b24d3",
+      "name" : "screenshot",
+      "source" : "80339032b40b24d3.png",
+      "type" : "image/png",
+      "size" : 50313
+    }, {
+      "uid" : "e015def8f3d18f8",
+      "name" : "screenshot",
+      "source" : "e015def8f3d18f8.png",
+      "type" : "image/png",
+      "size" : 344187
+    }, {
+      "uid" : "47893e9f2d523e65",
+      "name" : "screenshot",
+      "source" : "47893e9f2d523e65.png",
+      "type" : "image/png",
+      "size" : 343938
+    }, {
+      "uid" : "ba40c90f23531591",
+      "name" : "screenshot",
+      "source" : "ba40c90f23531591.png",
+      "type" : "image/png",
+      "size" : 331328
+    }, {
+      "uid" : "6b7fa04882f69fa1",
+      "name" : "screenshot",
+      "source" : "6b7fa04882f69fa1.png",
+      "type" : "image/png",
+      "size" : 347030
+    }, {
+      "uid" : "1f88a102ae35f4d4",
+      "name" : "screenshot",
+      "source" : "1f88a102ae35f4d4.png",
+      "type" : "image/png",
+      "size" : 38732
+    }, {
+      "uid" : "db376fb5a2ee8937",
+      "name" : "screenshot",
+      "source" : "db376fb5a2ee8937.png",
+      "type" : "image/png",
+      "size" : 331328
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 31,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > Firefox > testCaseId9.spec.js"
+  }, {
+    "name" : "host",
+    "value" : "fv-az529-638"
+  }, {
+    "name" : "thread",
+    "value" : "fv-az529-638-5657-playwright-worker-1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Firefox"
+  }, {
+    "name" : "suite",
+    "value" : "testCaseId9.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "Firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8a2556dd50967dbb.json",
+  "parameterValues" : [ "Firefox" ]
+}
