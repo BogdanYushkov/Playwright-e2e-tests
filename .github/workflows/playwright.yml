@@ -82,13 +82,15 @@ jobs:
         git config --global user.email "github-actions@github.com"
       if: always()  # Выполнится всегда.
 
-    - name: Clean up previous deployment
+    - name: Ensure proper permissions and clean deployment
       run: |
-        sudo rm -rf allure-report/*
+        sudo chmod -R 777 allure-report
+        sudo chown -R $USER:$USER allure-report
         git fetch origin
         git checkout -B gh-pages origin/gh-pages
         git reset --hard origin/gh-pages
         git clean -fdx
+        git rm -rf allure-report/*
       if: always()  # Выполнится всегда.
 
     - name: Deploy Allure Report to GitHub Pages
