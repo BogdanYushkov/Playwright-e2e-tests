@@ -1,0 +1,209 @@
+{
+  "uid" : "8146abad5fa43f21",
+  "name" : "Test Sorting 'Price (low to high)'",
+  "fullName" : "testCaseId6.spec.js#Test Sorting 'Price (low to high)'",
+  "historyId" : "371f5f122ad2b851b2dd8d682f61e81d:483ec23660f592decbe63698f54f1a47",
+  "time" : {
+    "start" : 1747555527538,
+    "stop" : 1747555528155,
+    "duration" : 617
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1747555527538,
+        "stop" : 1747555527542,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "browser.newContext",
+      "time" : {
+        "start" : 1747555527545,
+        "stop" : 1747555527618,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "browserContext.newPage",
+      "time" : {
+        "start" : 1747555527620,
+        "stop" : 1747555527648,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.goto(https://www.saucedemo.com/inventory.html)",
+      "time" : {
+        "start" : 1747555527649,
+        "stop" : 1747555528011,
+        "duration" : 362
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.click(.product_sort_container)",
+      "time" : {
+        "start" : 1747555528012,
+        "stop" : 1747555528109,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.selectOption(.product_sort_container)",
+      "time" : {
+        "start" : 1747555528110,
+        "stop" : 1747555528127,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.allTextContents(.inventory_item_price)",
+      "time" : {
+        "start" : 1747555528130,
+        "stop" : 1747555528152,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toEqual",
+      "time" : {
+        "start" : 1747555528153,
+        "stop" : 1747555528153,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1747555528153,
+        "stop" : 1747555528154,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > Chromium > testCaseId6.spec.js"
+  }, {
+    "name" : "host",
+    "value" : "pkrvm1036rseh6a"
+  }, {
+    "name" : "thread",
+    "value" : "pkrvm1036rseh6a-5804-playwright-worker-0"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Chromium"
+  }, {
+    "name" : "suite",
+    "value" : "testCaseId6.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "Chromium"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1ab53a6f0fb019af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741531523758,
+        "stop" : 1741531524331,
+        "duration" : 573
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8146abad5fa43f21.json",
+  "parameterValues" : [ "Chromium" ]
+}

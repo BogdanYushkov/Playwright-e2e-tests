@@ -2,9 +2,9 @@
   "name" : "GitHub Actions",
   "type" : "github",
   "url" : "https://BogdanYushkov.github.io/Playwright-e2e-tests",
-  "buildOrder" : 102,
-  "buildName" : "GitHub Actions Run #13772432930",
-  "buildUrl" : "https://github.com/BogdanYushkov/Playwright-e2e-tests/actions/runs/13772432930",
+  "buildOrder" : 103,
+  "buildName" : "GitHub Actions Run #15093868854",
+  "buildUrl" : "https://github.com/BogdanYushkov/Playwright-e2e-tests/actions/runs/15093868854",
   "reportName" : "Allure Report with history",
-  "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/102"
+  "reportUrl" : "https://BogdanYushkov.github.io/Playwright-e2e-tests/103"
 } ]
