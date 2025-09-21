@@ -6,39 +6,39 @@
       "name" : "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Cart is empty\"\nReceived string:    \"\"",
       "children" : [ {
         "name" : "Test Checkout without products",
-        "uid" : "aaeeb7915c4cbaa2",
+        "uid" : "40bad95207f13246",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1747555535050,
-          "stop" : 1747555536709,
-          "duration" : 1659
+          "start" : 1758454370365,
+          "stop" : 1758454372062,
+          "duration" : 1697
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "Chromium" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "2b4cbf39b093f52b",
+        "uid" : "c786b08d06c59f7e",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1747555556387,
-          "stop" : 1747555560496,
-          "duration" : 4109
+          "start" : 1758454393442,
+          "stop" : 1758454397655,
+          "duration" : 4213
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "Firefox" ]
       }, {
         "name" : "Test Checkout without products",
-        "uid" : "4b6b6a5e99724281",
+        "uid" : "297f76997e594dfb",
         "parentUid" : "715149c2f61f09e8eaa29540894d619d",
         "status" : "failed",
         "time" : {
-          "start" : 1747555579327,
-          "stop" : 1747555581347,
-          "duration" : 2020
+          "start" : 1758454415429,
+          "stop" : 1758454417343,
+          "duration" : 1914
         },
         "flaky" : false,
         "newFailed" : false,
