@@ -1,0 +1,85 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: testCaseId9.spec.js >> Checkout from an empty cart should be blocked (known bug)
+- Location: tests/testCaseId9.spec.js:11:6
+
+# Error details
+
+```
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /\/cart\.html$/
+Received string:  "https://www.saucedemo.com/checkout-step-one.html"
+Timeout: 5000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 5000ms
+    14 × unexpected value "https://www.saucedemo.com/checkout-step-one.html"
+
+```
+
+```yaml
+- button "Open Menu"
+- img "Open Menu"
+- text: "Swag Labs Checkout: Your Information"
+- textbox "First Name"
+- textbox "Last Name"
+- textbox "Zip/Postal Code"
+- button "Go back Cancel":
+  - img "Go back"
+  - text: Cancel
+- button "Continue"
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: https://twitter.com/saucelabs
+    - listitem:
+      - link "Facebook":
+        - /url: https://www.facebook.com/saucelabs
+    - listitem:
+      - link "LinkedIn":
+        - /url: https://www.linkedin.com/company/sauce-labs/
+  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+```
+
+# Test source
+
+```ts
+  1  | const { test, expect } = require("@playwright/test");
+  2  | 
+  3  | /**
+  4  |  * Known application bug: saucedemo lets the user proceed to checkout with
+  5  |  * an empty cart and shows no "Cart is empty" message.
+  6  |  *
+  7  |  * The test below documents the expected behaviour. It is annotated with
+  8  |  * `test.fail()` so the suite stays green while the bug exists, and will
+  9  |  * automatically flag a regression the day saucedemo fixes it.
+  10 |  */
+  11 | test.fail("Checkout from an empty cart should be blocked (known bug)", async ({ page }) => {
+  12 |     await page.goto("/");
+  13 |     await page.locator("#user-name").fill("standard_user");
+  14 |     await page.locator("#password").fill("secret_sauce");
+  15 |     await page.locator("#login-button").click();
+  16 |     await expect(page).toHaveURL(/\/inventory\.html$/);
+  17 | 
+  18 |     await page.locator("#shopping_cart_container").click();
+  19 |     await expect(page).toHaveURL(/\/cart\.html$/);
+  20 |     await expect(page.locator(".cart_item")).toHaveCount(0);
+  21 | 
+  22 |     await page.locator("#checkout").click();
+  23 | 
+  24 |     // Expected behaviour: stay on the cart page and show an error.
+  25 |     // Actual behaviour: navigation to checkout-step-one succeeds.
+> 26 |     await expect(page).toHaveURL(/\/cart\.html$/);
+     |                        ^ Error: expect(page).toHaveURL(expected) failed
+  27 |     await expect(page.locator('[data-test="error"]')).toContainText(/cart is empty/i);
+  28 | });
+  29 | 
+```
