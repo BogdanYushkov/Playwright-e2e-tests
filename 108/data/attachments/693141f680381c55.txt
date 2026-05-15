@@ -1,0 +1,91 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: testCaseId9.spec.js >> Test Checkout without products
+- Location: tests/testCaseId9.spec.js:17:1
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "Cart is empty"
+Received string:    ""
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]: Swag Labs
+  - generic [ref=e5]:
+    - generic [ref=e9]:
+      - textbox "Username" [ref=e11]
+      - textbox "Password" [ref=e13]
+      - button "Login" [ref=e15] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Accepted usernames are:" [level=4] [ref=e19]
+        - text: standard_user
+        - text: locked_out_user
+        - text: problem_user
+        - text: performance_glitch_user
+        - text: error_user
+        - text: visual_user
+      - generic [ref=e20]:
+        - heading "Password for all users:" [level=4] [ref=e21]
+        - text: secret_sauce
+```
+
+# Test source
+
+```ts
+  1  | const { test, expect } = require("@playwright/test");
+  2  | 
+  3  | test.beforeAll(async ({ browser }) => { // User is logged into account
+  4  |     const context = await browser.newContext();
+  5  |     const page = await context.newPage();
+  6  | 
+  7  |     await page.goto("https://www.saucedemo.com");
+  8  |     await page.fill("#user-name", "standard_user");
+  9  |     await page.fill("#password", "secret_sauce");
+  10 |     await page.click("#login-button");
+  11 |     await page.waitForURL("https://www.saucedemo.com/inventory.html");
+  12 | 
+  13 |     await context.storageState({ path: "temp-auth.json" });
+  14 |     await context.close();
+  15 | });
+  16 | 
+  17 | test("Test Checkout without products", async ({ browser }) => {
+  18 |     const context = await browser.newContext({ storageState: "temp-auth.json" });
+  19 |     const page = await context.newPage();
+  20 | 
+  21 |     await page.goto("https://www.saucedemo.com/inventory.html");
+  22 |     await page.click("#shopping_cart_container")
+  23 |     
+  24 |     const cartListLocator = page.locator('.cart_list');
+  25 | 
+  26 | 
+  27 |     const childElements = await cartListLocator.locator('> div');
+  28 | 
+  29 |     const childCount = await childElements.count();
+  30 | 
+  31 | 
+  32 |     await page.waitForURL("https://www.saucedemo.com/cart.html") // Cart page is displayed
+  33 |     await expect(childCount).toBeLessThanOrEqual(2); // products are not displayed
+  34 | 
+  35 |     await page.click("#checkout")
+  36 |  
+  37 |     const checkoutInfoLocator = page.locator('.checkout_info');
+  38 |     const textContent = await checkoutInfoLocator.textContent();
+  39 | 
+> 40 |     expect(textContent).toContain('Cart is empty'); // error message "Cart is empty" are displayed
+     |                         ^ Error: expect(received).toContain(expected) // indexOf
+  41 |     // This text will be failed 
+  42 | })
+```
