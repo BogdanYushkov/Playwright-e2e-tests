@@ -1,0 +1,77 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: checkout/empty-cart-checkout.spec.js >> Checkout | Validation >> Checkout from an empty cart is blocked (known bug)
+- Location: tests/checkout/empty-cart-checkout.spec.js:29:10
+
+# Error details
+
+```
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /\/cart\.html$/
+Received string:  "https://www.saucedemo.com/checkout-step-one.html"
+Timeout: 5000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 5000ms
+    14 × unexpected value "https://www.saucedemo.com/checkout-step-one.html"
+
+```
+
+```yaml
+- button "Open Menu"
+- img "Open Menu"
+- text: "Swag Labs Checkout: Your Information"
+- textbox "First Name"
+- textbox "Last Name"
+- textbox "Zip/Postal Code"
+- button "Go back Cancel":
+  - img "Go back"
+  - text: Cancel
+- button "Continue"
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: https://twitter.com/saucelabs
+    - listitem:
+      - link "Facebook":
+        - /url: https://www.facebook.com/saucelabs
+    - listitem:
+      - link "LinkedIn":
+        - /url: https://www.linkedin.com/company/sauce-labs/
+  - text: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+```
+
+# Test source
+
+```ts
+  1  | /**
+  2  |  * BasePage — common helpers shared by all Page Objects.
+  3  |  */
+  4  | class BasePage {
+  5  |     /** @param {import('@playwright/test').Page} page */
+  6  |     constructor(page) {
+  7  |         this.page = page;
+  8  |     }
+  9  | 
+  10 |     async goto(path = "/") {
+  11 |         await this.page.goto(path);
+  12 |     }
+  13 | 
+  14 |     async expectUrl(pattern) {
+  15 |         const { expect } = require("@playwright/test");
+> 16 |         await expect(this.page).toHaveURL(pattern);
+     |                                 ^ Error: expect(page).toHaveURL(expected) failed
+  17 |     }
+  18 | }
+  19 | 
+  20 | module.exports = { BasePage };
+  21 | 
+```
