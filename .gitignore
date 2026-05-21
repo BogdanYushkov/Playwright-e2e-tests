@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Test artifacts
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Auth state (generated at runtime by global-setup.js)
+.auth/
+temp-auth.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
